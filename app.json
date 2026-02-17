@@ -1,4 +1,46 @@
 {
-  "name": "cosmo-quiz",
-  "slug": "cosmo-quiz"
+  "expo": {
+    "name": "Cosmo Quiz",
+    "slug": "cosmo-quiz",
+    "scheme": "cosmoquiz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+
+    "userInterfaceStyle": "dark",
+
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#060C1C"
+    },
+
+    "android": {
+      "package": "com.livisystem.cosmoquiz",
+      "splash": {
+        "image": "./assets/images/logo.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#060C1C"
+      }
+    },
+
+    "androidStatusBar": {
+      "backgroundColor": "#060C1C",
+      "barStyle": "light-content"
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#0B1020",
+      "barStyle": "light-content"
+    },
+
+    "ios": {
+      "bundleIdentifier": "com.livisystem.cosmoquiz",
+      "buildNumber": "1.0.0"
+    },
+
+    "plugins": ["expo-localization", "expo-splash-screen"],
+
+    "extra": { "eas": { "projectId": "7a69fe0b-a548-4082-8bcc-cf0df6422439" } },
+    "owner": "eduardolivip"
+  }
 }
