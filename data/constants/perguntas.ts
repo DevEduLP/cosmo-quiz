@@ -5,6 +5,7 @@ import Pergunta from '@/data/model/Pergunta'
 const perguntas: Pergunta[] = [
   {
     id: 1,
+    nivel: 'iniciante',
     enunciado: 'Qual é o maior planeta do sistema solar?',
     opcoes: ['Terra', 'Júpiter', 'Saturno', 'Urano'],
     resposta: 1,
@@ -12,6 +13,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 2,
+    nivel: 'iniciante',
     enunciado: 'Quantos planetas existem no sistema solar?',
     opcoes: ['8', '9', '7', '10'],
     resposta: 0,
@@ -19,6 +21,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 3,
+    nivel: 'iniciante',
     enunciado: "Qual planeta é conhecido como o 'Planeta Vermelho'?",
     opcoes: ['Marte', 'Vênus', 'Júpiter', 'Saturno'],
     resposta: 0,
@@ -26,6 +29,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 4,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta é famoso pelos seus anéis?',
     opcoes: ['Urano', 'Netuno', 'Saturno', 'Júpiter'],
     resposta: 2,
@@ -33,6 +37,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 5,
+    nivel: 'medio',
     enunciado: 'Qual é o planeta mais frio do sistema solar?',
     opcoes: ['Netuno', 'Urano', 'Saturno', 'Plutão'],
     resposta: 1,
@@ -40,6 +45,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 6,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta é o mais próximo do Sol?',
     opcoes: ['Terra', 'Mercúrio', 'Vênus', 'Marte'],
     resposta: 1,
@@ -47,6 +53,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 7,
+    nivel: 'medio',
     enunciado: 'Qual é a maior lua de Saturno?',
     opcoes: ['Titã', 'Europa', 'Ganimedes', 'Calisto'],
     resposta: 0,
@@ -54,6 +61,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 8,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem um dia mais longo que seu ano?',
     opcoes: ['Vênus', 'Mercúrio', 'Marte', 'Netuno'],
     resposta: 0,
@@ -61,13 +69,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 9,
-    enunciado: "Qual planeta é conhecido como o 'gigante gasoso'?",
-    opcoes: ['Júpiter', 'Saturno', 'Netuno', 'Urano'],
+    nivel: 'iniciante',
+    enunciado: 'Qual destes planetas é um gigante gasoso?',
+    opcoes: ['Júpiter', 'Marte', 'Terra', 'Mercúrio'],
     resposta: 0,
-    explicacao: 'Júpiter é o maior dos gigantes, composto principalmente de hidrogênio e hélio.'
+    explicacao: 'Júpiter e Saturno são gigantes gasosos, feitos principalmente de hidrogênio e hélio. Urano e Netuno são chamados de gigantes de gelo.'
   },
   {
     id: 10,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem a maior montanha do sistema solar?',
     opcoes: ['Terra', 'Marte', 'Vênus', 'Mercúrio'],
     resposta: 1,
@@ -75,6 +85,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 11,
+    nivel: 'iniciante',
     enunciado: 'Qual é o nome da galáxia em que vivemos?',
     opcoes: ['Via Láctea', 'Andrômeda', 'Triângulo', 'Centaurus A'],
     resposta: 0,
@@ -82,6 +93,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 12,
+    nivel: 'medio',
     enunciado: 'Quantas luas tem Marte?',
     opcoes: ['1', '2', '3', '4'],
     resposta: 1,
@@ -89,6 +101,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 13,
+    nivel: 'medio',
     enunciado: 'Qual é a maior lua do sistema solar?',
     opcoes: ['Titã', 'Ganimedes', 'Calisto', 'Europa'],
     resposta: 1,
@@ -96,6 +109,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 14,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta é conhecido por ter uma grande mancha vermelha?',
     opcoes: ['Marte', 'Júpiter', 'Saturno', 'Vênus'],
     resposta: 1,
@@ -103,6 +117,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 15,
+    nivel: 'iniciante',
     enunciado: 'Qual é o menor planeta do sistema solar?',
     opcoes: ['Mercúrio', 'Marte', 'Vênus', 'Plutão'],
     resposta: 0,
@@ -110,6 +125,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 16,
+    nivel: 'iniciante',
     enunciado: 'Qual é o nome do segundo maior planeta do sistema solar?',
     opcoes: ['Urano', 'Netuno', 'Saturno', 'Júpiter'],
     resposta: 2,
@@ -117,6 +133,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 17,
+    nivel: 'medio',
     enunciado: 'Qual é o nome do rover que a NASA enviou a Marte em 2021?',
     opcoes: ['Curiosity', 'Spirit', 'Opportunity', 'Perseverance'],
     resposta: 3,
@@ -124,18 +141,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 18,
-    enunciado: 'Quantas estrelas existem na Via Láctea?',
-    opcoes: [
-      'Cerca de 100 bilhões',
-      'Cerca de 200 bilhões',
-      'Cerca de 300 bilhões',
-      'Cerca de 400 bilhões',
-    ],
-    resposta: 3,
-    explicacao: 'As estimativas variam amplamente (~100–400 bilhões). O valor de 400 bilhões está no topo da faixa.'
+    nivel: 'medio',
+    enunciado: 'Estima-se que a Via Láctea tenha quantas estrelas?',
+    opcoes: ['Cerca de 50 mil', 'Cerca de 1 milhão', 'Entre 100 e 400 bilhões', 'Cerca de 10 quatrilhões'],
+    resposta: 2,
+    explicacao: 'As estimativas variam entre 100 e 400 bilhões de estrelas, porque muitas são anãs vermelhas pouco brilhantes e difíceis de contar.'
   },
   {
     id: 19,
+    nivel: 'iniciante',
     enunciado: 'Qual é a principal composição da atmosfera de Vênus?',
     opcoes: ['Oxigênio', 'Hidrogênio', 'Nitrogênio', 'Dióxido de carbono'],
     resposta: 3,
@@ -143,6 +157,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 20,
+    nivel: 'iniciante',
     enunciado: 'Qual é a estrela mais próxima da Terra depois do Sol?',
     opcoes: ['Proxima Centauri', 'Betelgeuse', 'Alpha Centauri A', 'Sirius'],
     resposta: 0,
@@ -150,6 +165,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 21,
+    nivel: 'medio',
     enunciado: 'Qual é a unidade de medida usada para distâncias dentro do sistema solar?',
     opcoes: ['Anos-luz', 'Parsecs', 'Unidade Astronômica', 'Quilômetros'],
     resposta: 2,
@@ -157,6 +173,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 22,
+    nivel: 'iniciante',
     enunciado: 'O que é um buraco negro?',
     opcoes: [
       'Uma estrela em colapso',
@@ -169,6 +186,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 23,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem as maiores variações de temperatura entre o dia e a noite?',
     opcoes: ['Mercúrio', 'Marte', 'Terra', 'Vênus'],
     resposta: 0,
@@ -176,6 +194,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 24,
+    nivel: 'medio',
     enunciado: 'Qual é o nome da maior lua de Netuno?',
     opcoes: ['Titã', 'Europa', 'Tritão', 'Io'],
     resposta: 2,
@@ -183,6 +202,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 25,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem ventos que podem chegar a 2.100 km/h?',
     opcoes: ['Júpiter', 'Saturno', 'Netuno', 'Urano'],
     resposta: 2,
@@ -190,6 +210,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 26,
+    nivel: 'medio',
     enunciado: 'Qual é a principal composição das nuvens de Vênus?',
     opcoes: ['Água', 'Metano', 'Ácido sulfúrico', 'Amoníaco'],
     resposta: 2,
@@ -197,25 +218,23 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 27,
-    enunciado: 'Qual é a maior estrutura conhecida no universo?',
-    opcoes: [
-      'Superaglomerado de Hércules',
-      'Grande Muralha de Sloan',
-      'Grande Atrator',
-      'Grande Muralha de Bóotes',
-    ],
-    resposta: 1,
-    explicacao: 'A Grande Muralha de Sloan é uma imensa estrutura de galáxias com ~1,4 bilhão de anos-luz.'
+    nivel: 'medio',
+    enunciado: 'Como se chama o superaglomerado de galáxias que abriga a Via Láctea?',
+    opcoes: ['Laniakea', 'Shapley', 'Coma', 'Perseu-Peixes'],
+    resposta: 0,
+    explicacao: 'Laniakea (“céu imenso” em havaiano) foi definido em 2014 e reúne cerca de 100 mil galáxias, incluindo a nossa.'
   },
   {
     id: 28,
-    enunciado: 'Qual planeta tem um sistema de anéis mais complexo?',
-    opcoes: ['Júpiter', 'Urano', 'Netuno', 'Saturno'],
-    resposta: 3,
-    explicacao: 'O sistema de anéis de Saturno é o mais extenso e detalhado, com múltiplos anéis e divisões.'
+    nivel: 'iniciante',
+    enunciado: 'Quanto tempo a Terra leva para dar uma volta completa ao redor do Sol?',
+    opcoes: ['Cerca de 24 horas', 'Cerca de 30 dias', 'Cerca de 365 dias', 'Cerca de 687 dias'],
+    resposta: 2,
+    explicacao: 'O ano terrestre dura ~365,25 dias. O quarto de dia que sobra é compensado a cada 4 anos com o ano bissexto.'
   },
   {
     id: 29,
+    nivel: 'iniciante',
     enunciado: 'Qual foi o primeiro satélite artificial lançado ao espaço?',
     opcoes: ['Sputnik 1', 'Explorer 1', 'Vanguard 1', 'Luna 1'],
     resposta: 0,
@@ -223,6 +242,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 30,
+    nivel: 'medio',
     enunciado: 'Qual é o tempo de rotação da Terra em torno de seu eixo?',
     opcoes: ['24 horas', '23 horas e 56 minutos', '24 horas e 30 minutos', '23 horas'],
     resposta: 1,
@@ -232,6 +252,7 @@ const perguntas: Pergunta[] = [
   // ====== Novas perguntas (31–80) ======
   {
     id: 31,
+    nivel: 'iniciante',
     enunciado: 'O que causa as estações do ano na Terra?',
     opcoes: ['Distância ao Sol', 'Inclinação do eixo da Terra', 'Fases da Lua', 'Ventos solares'],
     resposta: 1,
@@ -239,6 +260,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 32,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem a maior densidade média?',
     opcoes: ['Mercúrio', 'Terra', 'Júpiter', 'Netuno'],
     resposta: 1,
@@ -246,13 +268,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 33,
-    enunciado: 'Como se chama a maior montanha conhecida do sistema solar?',
-    opcoes: ['Monte Everest', 'Olympus Mons', 'Maxwell Montes', 'Mauna Kea'],
+    nivel: 'medio',
+    enunciado: 'Qual sonda fez o primeiro sobrevoo de Plutão, em 2015?',
+    opcoes: ['Voyager 1', 'New Horizons', 'Cassini', 'Juno'],
     resposta: 1,
-    explicacao: 'Olympus Mons, em Marte, é um vulcão-escudo colossal com ~600 km de base.'
+    explicacao: 'A New Horizons passou por Plutão em julho de 2015 e revelou a grande planície gelada em forma de coração, a Sputnik Planitia.'
   },
   {
     id: 34,
+    nivel: 'iniciante',
     enunciado: 'As auroras ocorrem principalmente em quais regiões da Terra?',
     opcoes: ['Trópicos', 'Regiões polares', 'Desertos', 'Linha do Equador'],
     resposta: 1,
@@ -260,6 +284,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 35,
+    nivel: 'medio',
     enunciado: 'Qual planeta apresenta a Grande Mancha Escura observada pela Voyager 2?',
     opcoes: ['Júpiter', 'Netuno', 'Saturno', 'Urano'],
     resposta: 1,
@@ -267,6 +292,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 36,
+    nivel: 'iniciante',
     enunciado: 'Qual é o principal componente da atmosfera terrestre?',
     opcoes: ['Oxigênio', 'Nitrogênio', 'Dióxido de carbono', 'Hidrogênio'],
     resposta: 1,
@@ -274,13 +300,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 37,
-    enunciado: 'Fobos e Deimos são luas de qual planeta?',
-    opcoes: ['Júpiter', 'Marte', 'Saturno', 'Urano'],
-    resposta: 1,
-    explicacao: 'São pequenos satélites irregulares de Marte, provavelmente asteroides capturados.'
+    nivel: 'medio',
+    enunciado: 'Qual lua de Saturno lança jatos de água pelo polo sul?',
+    opcoes: ['Titã', 'Mimas', 'Encélado', 'Jápeto'],
+    resposta: 2,
+    explicacao: 'A sonda Cassini observou gêiseres de vapor d’água e gelo saindo de fissuras no polo sul de Encélado, sinal de um oceano sob a crosta.'
   },
   {
     id: 38,
+    nivel: 'medio',
     enunciado: 'Qual planeta “gira de lado” por ter grande inclinação axial (~98°)?',
     opcoes: ['Vênus', 'Urano', 'Netuno', 'Saturno'],
     resposta: 1,
@@ -288,6 +316,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 39,
+    nivel: 'iniciante',
     enunciado: 'Qual é a estrela mais brilhante do céu noturno terrestre?',
     opcoes: ['Sirius', 'Vega', 'Rigel', 'Canopus'],
     resposta: 0,
@@ -295,6 +324,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 40,
+    nivel: 'iniciante',
     enunciado: 'Qual cometa é famoso por retornar a cada ~76 anos?',
     opcoes: ['Halley', 'Hale–Bopp', 'Encke', 'Swift–Tuttle'],
     resposta: 0,
@@ -302,6 +332,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 41,
+    nivel: 'iniciante',
     enunciado: 'Qual missão levou humanos à Lua pela primeira vez?',
     opcoes: ['Apollo 8', 'Apollo 11', 'Apollo 12', 'Apollo 13'],
     resposta: 1,
@@ -309,6 +340,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 42,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta completa uma órbita ao redor do Sol mais rapidamente?',
     opcoes: ['Vênus', 'Terra', 'Mercúrio', 'Marte'],
     resposta: 2,
@@ -316,6 +348,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 43,
+    nivel: 'medio',
     enunciado: 'Como se chama o caminho aparente do Sol no céu, base das constelações do zodíaco?',
     opcoes: ['Equador celeste', 'Meridiano', 'Eclíptica', 'Zenite'],
     resposta: 2,
@@ -323,6 +356,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 44,
+    nivel: 'medio',
     enunciado: 'Que instrumento mede o brilho aparente de astros?',
     opcoes: ['Espectrógrafo', 'Fotômetro', 'Telurímetro', 'Radiômetro de solo'],
     resposta: 1,
@@ -330,6 +364,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 45,
+    nivel: 'iniciante',
     enunciado: 'O que é um eclipse lunar?',
     opcoes: [
       'A Lua entre o Sol e a Terra',
@@ -342,6 +377,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 46,
+    nivel: 'iniciante',
     enunciado: "Qual planeta é chamado de 'estrela d’alva' quando visível ao amanhecer?",
     opcoes: ['Vênus', 'Mercúrio', 'Marte', 'Saturno'],
     resposta: 0,
@@ -349,6 +385,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 47,
+    nivel: 'iniciante',
     enunciado: 'Qual telescópio espacial lançado em 1990 revolucionou a astronomia observacional?',
     opcoes: ['Spitzer', 'Hubble', 'James Webb', 'Chandra'],
     resposta: 1,
@@ -356,6 +393,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 48,
+    nivel: 'iniciante',
     enunciado: 'O que é uma galáxia?',
     opcoes: [
       'Um sistema planetário',
@@ -368,6 +406,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 49,
+    nivel: 'iniciante',
     enunciado: 'Qual é a velocidade da luz no vácuo (aprox.)?',
     opcoes: ['30.000 km/s', '300.000 km/s', '3.000 km/s', '3.000.000 km/s'],
     resposta: 1,
@@ -375,6 +414,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 50,
+    nivel: 'medio',
     enunciado: 'Qual planeta possui uma tempestade hexagonal em seu polo norte?',
     opcoes: ['Júpiter', 'Saturno', 'Urano', 'Netuno'],
     resposta: 1,
@@ -382,6 +422,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 51,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem a órbita mais excêntrica entre os planetas clássicos?',
     opcoes: ['Vênus', 'Terra', 'Marte', 'Mercúrio'],
     resposta: 3,
@@ -389,6 +430,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 52,
+    nivel: 'iniciante',
     enunciado: 'O que é um meteoro?',
     opcoes: [
       'Rocha espacial em órbita da Terra',
@@ -401,6 +443,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 53,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem a maior gravidade superficial?',
     opcoes: ['Saturno', 'Júpiter', 'Netuno', 'Terra'],
     resposta: 1,
@@ -408,6 +451,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 54,
+    nivel: 'medio',
     enunciado: 'Qual destes NÃO é um planeta anão?',
     opcoes: ['Ceres', 'Éris', 'Haumea', 'Titã'],
     resposta: 3,
@@ -415,6 +459,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 55,
+    nivel: 'medio',
     enunciado: 'Como se chama a camada visível do Sol que vemos a olho nu (com filtro)?',
     opcoes: ['Cromosfera', 'Fotosfera', 'Coroa', 'Núcleo'],
     resposta: 1,
@@ -422,6 +467,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 56,
+    nivel: 'iniciante',
     enunciado: 'O Cruzeiro do Sul ajuda a encontrar qual direção no hemisfério sul?',
     opcoes: ['Norte', 'Sul', 'Leste', 'Oeste'],
     resposta: 1,
@@ -429,6 +475,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 57,
+    nivel: 'iniciante',
     enunciado: 'O que é um exoplaneta?',
     opcoes: [
       'Planeta fora do Sistema Solar',
@@ -441,6 +488,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 58,
+    nivel: 'iniciante',
     enunciado: 'Qual é a fonte de energia do Sol?',
     opcoes: [
       'Fissão nuclear',
@@ -453,6 +501,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 59,
+    nivel: 'medio',
     enunciado: 'Qual planeta possui anéis pouco visíveis, finos e empoeirados, além de Saturno?',
     opcoes: ['Júpiter', 'Mercúrio', 'Vênus', 'Terra'],
     resposta: 0,
@@ -460,6 +509,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 60,
+    nivel: 'iniciante',
     enunciado: 'A Lua leva aproximadamente quanto tempo para completar um ciclo de fases?',
     opcoes: ['7 dias', '14 dias', '29,5 dias', '31 dias'],
     resposta: 2,
@@ -467,6 +517,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 61,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem o campo magnético mais forte?',
     opcoes: ['Terra', 'Júpiter', 'Saturno', 'Netuno'],
     resposta: 1,
@@ -474,6 +525,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 62,
+    nivel: 'iniciante',
     enunciado: 'O que define 1 Unidade Astronômica (UA)?',
     opcoes: [
       'Distância Terra–Lua',
@@ -486,6 +538,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 63,
+    nivel: 'medio',
     enunciado: 'Que tipo de estrela é Betelgeuse?',
     opcoes: ['Anã branca', 'Gigante azul', 'Supergigante vermelha', 'Anã marrom'],
     resposta: 2,
@@ -493,6 +546,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 64,
+    nivel: 'medio',
     enunciado: 'Qual planeta mostra frequentes tempestades de poeira que podem cobrir o globo?',
     opcoes: ['Vênus', 'Marte', 'Mercúrio', 'Urano'],
     resposta: 1,
@@ -500,6 +554,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 65,
+    nivel: 'iniciante',
     enunciado: 'O que é um meteorito?',
     opcoes: [
       'Meteoro muito brilhante',
@@ -512,6 +567,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 66,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta parece mais azul escuro devido ao metano na atmosfera?',
     opcoes: ['Urano', 'Netuno', 'Terra', 'Saturno'],
     resposta: 1,
@@ -519,6 +575,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 67,
+    nivel: 'iniciante',
     enunciado: 'O que é um ano-luz?',
     opcoes: [
       'Tempo que a Terra leva para orbitar o Sol',
@@ -531,6 +588,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 68,
+    nivel: 'medio',
     enunciado: 'Qual planeta tem o maior número de vulcões atualmente ativos?',
     opcoes: ['Terra', 'Vênus', 'Marte', 'Io'],
     resposta: 0,
@@ -538,6 +596,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 69,
+    nivel: 'medio',
     enunciado: 'A Estação Espacial Internacional completa uma órbita em cerca de:',
     opcoes: ['45 minutos', '90 minutos', '180 minutos', '360 minutos'],
     resposta: 1,
@@ -545,13 +604,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 70,
-    enunciado: 'Qual é o segundo planeta mais massivo do Sistema Solar?',
-    opcoes: ['Saturno', 'Netuno', 'Urano', 'Terra'],
-    resposta: 0,
-    explicacao: 'Saturno é o 2º em massa, atrás de Júpiter.'
+    nivel: 'iniciante',
+    enunciado: 'Qual telescópio espacial, lançado em 2021, observa o Universo no infravermelho?',
+    opcoes: ['Hubble', 'James Webb', 'Kepler', 'Chandra'],
+    resposta: 1,
+    explicacao: 'O James Webb foi lançado em dezembro de 2021 e opera no ponto L2, a ~1,5 milhão de km da Terra, observando no infravermelho.'
   },
   {
     id: 71,
+    nivel: 'medio',
     enunciado: 'O que é uma anã branca?',
     opcoes: [
       'Planeta gasoso jovem',
@@ -564,6 +625,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 72,
+    nivel: 'medio',
     enunciado: 'Qual destas é uma constelação do zodíaco?',
     opcoes: ['Órion', 'Escorpião', 'Cassiopeia', 'Cruzeiro do Sul'],
     resposta: 1,
@@ -571,6 +633,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 73,
+    nivel: 'medio',
     enunciado: 'Em qual fase da Lua pode ocorrer um eclipse solar total?',
     opcoes: ['Lua Nova', 'Quarto Crescente', 'Lua Cheia', 'Quarto Minguante'],
     resposta: 0,
@@ -578,18 +641,15 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 74,
-    enunciado: 'O que é a eclíptica?',
-    opcoes: [
-      'Plano da órbita da Terra ao redor do Sol',
-      'Linha que passa pelo zênite',
-      'Meridiano local',
-      'Círculo polar celeste',
-    ],
+    nivel: 'medio',
+    enunciado: 'Qual é a grande galáxia mais próxima da Via Láctea?',
+    opcoes: ['Andrômeda', 'Sombrero', 'Rodamoinho (M51)', 'Centaurus A'],
     resposta: 0,
-    explicacao: 'É o plano orbital da Terra; sua projeção no céu define o caminho aparente do Sol.'
+    explicacao: 'Andrômeda (M31) fica a ~2,5 milhões de anos-luz e está se aproximando: deve colidir com a Via Láctea em alguns bilhões de anos.'
   },
   {
     id: 75,
+    nivel: 'iniciante',
     enunciado: 'Qual planeta tem o ano (período orbital) mais longo?',
     opcoes: ['Saturno', 'Urano', 'Netuno', 'Júpiter'],
     resposta: 2,
@@ -597,6 +657,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 76,
+    nivel: 'medio',
     enunciado: 'Qual método de descoberta de exoplanetas observa o escurecimento periódico de uma estrela?',
     opcoes: ['Velocidade radial', 'Astrometria', 'Trânsito', 'Microlente'],
     resposta: 2,
@@ -604,6 +665,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 77,
+    nivel: 'medio',
     enunciado: 'Qual planeta gira mais rápido (dia mais curto)?',
     opcoes: ['Saturno', 'Júpiter', 'Netuno', 'Terra'],
     resposta: 1,
@@ -611,6 +673,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 78,
+    nivel: 'medio',
     enunciado: 'O que é a Nuvem de Oort?',
     opcoes: [
       'Aglomerado aberto próximo',
@@ -623,6 +686,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 79,
+    nivel: 'medio',
     enunciado: 'Qual sonda vem estudando Júpiter e suas luas desde 2016?',
     opcoes: ['Cassini', 'Juno', 'New Horizons', 'Voyager 2'],
     resposta: 1,
@@ -630,6 +694,7 @@ const perguntas: Pergunta[] = [
   },
   {
     id: 80,
+    nivel: 'iniciante',
     enunciado: 'Qual é o principal motivo de Vênus ser tão quente?',
     opcoes: [
       'Proximidade ao Sol',

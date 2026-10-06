@@ -6,6 +6,8 @@ import Enunciado from "../components/questionario/Enunciado";
 import Opcao from "../components/questionario/Opcao";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLang } from "../src/i18n";
+import * as Haptics from "expo-haptics";
+import { useSettings } from "../lib/settings";
 
 // IMPORTA OS DOIS BANCOS
 import perguntasPT from "../data/constants/perguntas";
@@ -126,7 +128,7 @@ export default function QuizScreen() {
     daily?: "0" | "1";
   }>();
 
-  const N = clampInt(String(n), 5, 50, 15);
+  const N = clampInt(String(n), 5, 35, 15);
   const NIVEL: "iniciante" | "medio" = nivel === "medio" ? "medio" : "iniciante";
   const lang = getLang();
 
@@ -166,15 +168,17 @@ export default function QuizScreen() {
 
   const total = qs.length;
 
-  // Se não tem perguntas, não renderiza (já redirecionou no useEffect)
-  if (total === 0) return null;
-
+  // Hooks sempre antes de qualquer return condicional (regras dos Hooks)
   const [i, setI] = React.useState(0);
   const [acertos, setAcertos] = React.useState(0);
   const [selecionada, setSelecionada] = React.useState<number | null>(null);
   const [locked, setLocked] = React.useState(false);
   const lockRef = React.useRef(false);
   const answersRef = React.useRef<{ id: number; escolhida: number; correta: number }[]>([]);
+  const { cfg } = useSettings();
+
+  // Se não tem perguntas, não renderiza (já redirecionou no useEffect)
+  if (total === 0) return null;
 
   if (i >= total) {
     lockRef.current = false;
@@ -197,6 +201,13 @@ export default function QuizScreen() {
     setSelecionada(ind);
     setLocked(true);
     if (ind === q.resposta) setAcertos((v) => v + 1);
+    if (cfg.haptics) {
+      Haptics.notificationAsync(
+        ind === q.resposta
+          ? Haptics.NotificationFeedbackType.Success
+          : Haptics.NotificationFeedbackType.Error
+      ).catch(() => {});
+    }
     answersRef.current[i] = { id: q.id, escolhida: ind, correta: q.resposta };
   }
 
@@ -266,7 +277,7 @@ const s = StyleSheet.create({
     marginTop: 110,
     color: "#FFFFFF",
     fontSize: 25,
-    fontFamily: "SOLARSPACEDEMO-Regular",
+    fontFamily: "RUBIKMOONROCKS",
     letterSpacing: 0.5,
   },
   card: {
@@ -282,7 +293,7 @@ const s = StyleSheet.create({
     marginTop: 6,
     color: "#B9C2CC",
     fontSize: 11,
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
     textAlign: "center",
   },
 });

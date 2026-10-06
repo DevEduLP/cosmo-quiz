@@ -11,13 +11,13 @@ export default function Logo() {
 
 const styles = StyleSheet.create({
     primario: {
-        fontFamily: 'SOLARSPACEDEMO-Regular',
+        fontFamily: 'RUBIKMOONROCKS',
         fontSize: 30,
         color: 'white',
         textAlign: 'center',
     },
     segundario: {
-        fontFamily: 'SPACEMISSION',
+        fontFamily: 'CHAKRAPETCH_BOLD',
         fontSize: 17,
         color: 'white',
         textAlign: 'center',

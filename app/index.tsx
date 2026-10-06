@@ -61,7 +61,7 @@ export default function Home() {
 
   function startGame(preset?: number) {
     const raw = preset ? String(preset) : n;
-    const val = clampInt(raw, 5, 50, 15);
+    const val = clampInt(raw, 5, 35, 15);
     setOpenQty(false);
     router.push({
       pathname: "/quiz",
@@ -325,7 +325,7 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     fontSize: 35,
     textAlign: "center",
-    fontFamily: "SOLARSPACEDEMO-Regular",
+    fontFamily: "RUBIKMOONROCKS",
     marginTop: 16,
   },
   sub: {
@@ -333,7 +333,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     fontSize: 15,
     textAlign: "center",
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
   },
 
   // modal idioma

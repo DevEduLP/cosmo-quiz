@@ -33,7 +33,7 @@ const pt: Dict = {
 
   // --- Modal: jogar ---
   "modal.title": "Quantas perguntas?",
-  "modal.hint": "Ou defina um número (5 a 50):",
+  "modal.hint": "Ou defina um número (5 a 35):",
   "modal.difficulty": "Dificuldade",
   "modal.dailyToggle": "Desafio do dia (mesmo conjunto p/ todos)",
   "modal.cancel": "Cancelar",
@@ -101,7 +101,7 @@ const en: Dict = {
 
   // --- Modal: play ---
   "modal.title": "How many questions?",
-  "modal.hint": "Or set a number (5 to 50):",
+  "modal.hint": "Or set a number (5 to 35):",
   "modal.difficulty": "Difficulty",
   "modal.dailyToggle": "Daily challenge (same set for everyone)",
   "modal.cancel": "Cancel",

@@ -134,7 +134,7 @@ const s = StyleSheet.create({
   overlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.3)" },
   wrap: { flex: 1, padding: 20, justifyContent: "center", gap: 2 },
   titleTxt: {
-    fontFamily: "SPACEMISSION",
+    fontFamily: "CHAKRAPETCH_BOLD",
     marginTop: 120,
     color: "#FFFFFF",
     fontSize: 32,
@@ -164,7 +164,7 @@ const s = StyleSheet.create({
   },
   shareTitle: {
     color: "#fff",
-    fontFamily: "SOLARSPACEDEMO-Regular",
+    fontFamily: "RUBIKMOONROCKS",
     fontSize: 22,
   },
   shareScore: { color: "#fff", fontSize: 48, fontWeight: "800", marginTop: 6 },

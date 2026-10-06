@@ -14,7 +14,7 @@ import { BlurView } from "expo-blur";
 type Props = {
   onPress: () => void;
   disabled?: boolean;
-  width?: number | string;
+  width?: ViewStyle["width"];
   style?: StyleProp<ViewStyle>;
   label?: string;                 // opcional
   children?: React.ReactNode;     // opcional
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   label: {
     color: "#FFFFFF",
     fontSize: 15,
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
     letterSpacing: 0.3,
   },
   star: {

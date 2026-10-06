@@ -133,7 +133,7 @@ const s = StyleSheet.create({
     marginTop: 120,
     textAlign: "center",
     color: "#FFF",
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
     fontSize: 28,
     marginBottom: 8,
   },
@@ -141,7 +141,7 @@ const s = StyleSheet.create({
     textAlign: "center",
     color: "#B9C2CC",
     marginTop: 24,
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
     fontSize: 15,
   },
   card: {
