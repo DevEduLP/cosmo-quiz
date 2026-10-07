@@ -7,16 +7,16 @@ import { getStats, type Stats } from "./progress";
 // Cada ID tem o formato "CgkI...". Enquanto um ID estiver vazio, a medalha não é enviada.
 // "steps" = conquista progressiva (o total de etapas no Console deve ser igual).
 const ACHIEVEMENTS: Record<string, { id: string; steps?: (s: Stats) => number }> = {
-  decolagem: { id: "" },
-  explorador: { id: "" },
-  pouso_lunar: { id: "" },
-  supernova: { id: "" },
-  maratona: { id: "" },
-  cometa: { id: "" },
-  viajante: { id: "" },
-  constelacao: { id: "", steps: (s) => s.games }, // 25 etapas
-  chuva_acertos: { id: "", steps: (s) => s.totalCorrect }, // 100 etapas
-  astronomo: { id: "", steps: (s) => s.seen.length }, // 200 etapas
+  decolagem: { id: "CgkI9pHeysYKEAIQAQ" },
+  explorador: { id: "CgkI9pHeysYKEAIQAg" },
+  pouso_lunar: { id: "CgkI9pHeysYKEAIQAw" },
+  supernova: { id: "CgkI9pHeysYKEAIQBA" },
+  maratona: { id: "CgkI9pHeysYKEAIQBQ" },
+  cometa: { id: "CgkI9pHeysYKEAIQBg" },
+  viajante: { id: "CgkI9pHeysYKEAIQBw" },
+  constelacao: { id: "CgkI9pHeysYKEAIQCA", steps: (s) => s.games }, // 25 etapas
+  chuva_acertos: { id: "CgkI9pHeysYKEAIQCQ", steps: (s) => s.totalCorrect }, // 100 etapas
+  astronomo: { id: "CgkI9pHeysYKEAIQCg", steps: (s) => s.seen.length }, // 200 etapas
 };
 
 let signedIn = false;
