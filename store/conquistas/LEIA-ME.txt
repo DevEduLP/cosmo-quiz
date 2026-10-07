@@ -1,0 +1,3 @@
+Ícones das conquistas do Google Play Games (512x512, PNG).
+Emojis: Noto Emoji (Google), licença Apache 2.0 — https://github.com/googlefonts/noto-emoji
+Fundo e moldura: Livi Studio.

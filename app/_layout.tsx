@@ -3,6 +3,8 @@ import { Stack, SplashScreen } from 'expo-router'
 import { useFonts } from 'expo-font'
 import { View } from "react-native";
 import { SettingsProvider } from "@/lib/settings";
+import { initAds } from "@/lib/ads";
+import { initPlayGames } from "@/lib/playGames";
 
 SplashScreen.preventAutoHideAsync()
 
@@ -20,6 +22,11 @@ export default function RootLayout() {
           return () => clearTimeout(id);
         }
       }, [fontsLoaded]);
+
+    React.useEffect(() => {
+        initAds();
+        initPlayGames();
+    }, []);
     
       if (!fontsLoaded) return <View />;
 

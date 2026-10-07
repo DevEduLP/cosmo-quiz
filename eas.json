@@ -9,12 +9,18 @@
       "distribution": "internal",
       "android": {
         "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_ADS_TEST": "1"
       }
     },
     "preview": {
       "distribution": "internal",
       "android": {
         "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_ADS_TEST": "1"
       }
     },
     "production": {
@@ -28,6 +34,9 @@
       "android": {
         "buildType": "apk",
         "image": "latest"
+      },
+      "env": {
+        "EXPO_PUBLIC_ADS_TEST": "1"
       }
     }
   },

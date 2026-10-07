@@ -1,11 +1,17 @@
 // app/medals.tsx
 import React from "react";
 import { Stack, useRouter } from "expo-router";
-import { View, Text, StyleSheet, FlatList, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, FlatList, ImageBackground, Pressable } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLocale } from "../src/i18n";
 import { MEDALS, getStats, type Stats } from "../lib/progress";
+import {
+  isSignedIn,
+  playGamesAvailable,
+  showPlayGamesAchievements,
+  signInPlayGames,
+} from "../lib/playGames";
 
 const BG = require("../assets/images/background.png");
 
@@ -16,6 +22,15 @@ function days(n: number) {
 export default function MedalsScreen() {
   const router = useRouter();
   const [stats, setStats] = React.useState<Stats | null>(null);
+  const [pgSignedIn, setPgSignedIn] = React.useState(isSignedIn());
+
+  async function onPlayGames() {
+    if (pgSignedIn) {
+      showPlayGamesAchievements();
+      return;
+    }
+    if (await signInPlayGames()) setPgSignedIn(true);
+  }
 
   React.useEffect(() => {
     getStats().then(setStats);
@@ -73,6 +88,11 @@ export default function MedalsScreen() {
         />
 
         <View style={s.footer}>
+          {playGamesAvailable() && (
+            <Pressable onPress={onPlayGames} style={s.pgBtn} accessibilityRole="button">
+              <Text style={s.pgTxt}>{t(pgSignedIn ? "medals.pg_open" : "medals.pg_signin")}</Text>
+            </Pressable>
+          )}
           <CosmicButton width={200} onPress={() => router.replace("/")} style={{ marginBottom: 40 }}>
             {t("home")}
           </CosmicButton>
@@ -134,4 +154,14 @@ const s = StyleSheet.create({
   bar: { position: "absolute", left: 0, top: 0, bottom: 0, backgroundColor: "rgba(140,120,255,0.55)" },
   barTxt: { color: "#FFFFFF", fontSize: 10, fontWeight: "700", textAlign: "center" },
   footer: { alignItems: "center", paddingTop: 6 },
+  pgBtn: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: "rgba(107,255,168,0.5)",
+    backgroundColor: "rgba(0,0,0,0.3)",
+    marginBottom: 10,
+  },
+  pgTxt: { color: "#6BFFA8", fontSize: 13, fontWeight: "700" },
 });

@@ -12,6 +12,8 @@ import Resultado from "../components/questionario/Resultado";
 import CosmicButton from "../components/ui/CosmicButton";
 import { addResult } from "../lib/history";
 import { recordGame, MEDALS } from "../lib/progress";
+import { registerRoundFinished, showAdThen } from "../lib/ads";
+import { syncAchievements } from "../lib/playGames";
 import ViewShot, { captureRef, type ViewShotRef } from "react-native-view-shot";
 import * as Sharing from "expo-sharing";
 import { Image as ExpoImage } from "expo-image";
@@ -47,6 +49,7 @@ export default function ResultScreen() {
     if (savedRef.current) return;
     savedRef.current = true;
     addResult(pts, tot).catch(() => {});
+    registerRoundFinished();
     let answers = [];
     try {
       answers = JSON.parse(String(review) || "[]");
@@ -61,6 +64,7 @@ export default function ResultScreen() {
       .then(({ newMedals, stats }) => {
         setNewMedals(newMedals);
         setStreak(stats.dayStreak);
+        syncAchievements(stats);
       })
       .catch(() => {});
   }, [pts, tot, review, nivel, daily]);
@@ -136,7 +140,7 @@ export default function ResultScreen() {
             </CosmicButton>
 
             <CosmicButton
-              onPress={() => router.replace("/")}
+              onPress={() => showAdThen(() => router.replace("/"))}
               width={220}
               style={{ marginBottom: 8 }}
             >
@@ -145,10 +149,12 @@ export default function ResultScreen() {
 
             <CosmicButton
               onPress={() =>
-                router.replace({
-                  pathname: "/quiz",
-                  params: { n: String(tot), nivel: String(nivel) },
-                })
+                showAdThen(() =>
+                  router.replace({
+                    pathname: "/quiz",
+                    params: { n: String(tot), nivel: String(nivel) },
+                  })
+                )
               }
               width={220}
               style={{ marginBottom: 8 }}

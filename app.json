@@ -41,7 +41,22 @@
       ],
       "expo-image",
       "expo-sharing",
-      "expo-status-bar"
+      "expo-status-bar",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true,
+          "userTrackingUsageDescription": "Usado para mostrar anúncios mais relevantes para você."
+        }
+      ],
+      [
+        "./modules/play-games/app.plugin.js",
+        {
+          "projectId": ""
+        }
+      ]
     ],
     "extra": {
       "eas": {
