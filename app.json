@@ -8,7 +8,7 @@
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "dark",
     "android": {
-      "package": "com.livisystem.cosmoquiz",
+      "package": "com.livistudio.cosmoquiz",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#060C1C"
@@ -23,7 +23,7 @@
       "barStyle": "light-content"
     },
     "ios": {
-      "bundleIdentifier": "com.livisystem.cosmoquiz",
+      "bundleIdentifier": "com.livistudio.cosmoquiz",
       "buildNumber": "1.0.0"
     },
     "plugins": [

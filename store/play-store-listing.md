@@ -1,6 +1,6 @@
 # Cosmo Quiz — Textos e respostas para o Play Console
 
-Desenvolvedor: **Livi Studio** · Contato: **edulpbs@gmail.com** · Pacote: `com.livisystem.cosmoquiz`
+Desenvolvedor: **Livi Studio** · Contato: **edulpbs@gmail.com** · Pacote: `com.livistudio.cosmoquiz`
 
 ---
 
