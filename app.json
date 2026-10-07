@@ -51,6 +51,7 @@
           "userTrackingUsageDescription": "Usado para mostrar anúncios mais relevantes para você."
         }
       ],
+      "./plugins/with-ads-android-backend.js",
       [
         "./modules/play-games/app.plugin.js",
         {
