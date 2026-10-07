@@ -52,7 +52,7 @@ export default function Opcao({
             disabled && !selected && { opacity: 0.6 },
           ]}
         >
-          <View pointerEvents="none" style={StyleSheet.absoluteFillObject}>
+          <View pointerEvents="none" style={StyleSheet.absoluteFill}>
             <View style={[styles.star, { top: 6, left: 14 }]} />
             <View style={[styles.star, { top: 12, right: 22, width: 3, height: 3 }]} />
             <View style={[styles.star, { bottom: 8, left: 40, opacity: 0.7 }]} />

@@ -6,11 +6,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-
     "userInterfaceStyle": "dark",
-
     "android": {
-      "package": "com.livisystem.cosmoquiz",
+      "package": "com.livistudio.cosmoquiz",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#060C1C"
@@ -20,21 +18,14 @@
         "android.permission.WRITE_EXTERNAL_STORAGE"
       ]
     },
-
     "androidStatusBar": {
       "backgroundColor": "#060C1C",
       "barStyle": "light-content"
     },
-    "androidNavigationBar": {
-      "backgroundColor": "#0B1020",
-      "barStyle": "light-content"
-    },
-
     "ios": {
-      "bundleIdentifier": "com.livisystem.cosmoquiz",
+      "bundleIdentifier": "com.livistudio.cosmoquiz",
       "buildNumber": "1.0.0"
     },
-
     "plugins": [
       "expo-router",
       "expo-localization",
@@ -47,10 +38,32 @@
           "resizeMode": "contain",
           "backgroundColor": "#060C1C"
         }
+      ],
+      "expo-image",
+      "expo-sharing",
+      "expo-status-bar",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511",
+          "delayAppMeasurementInit": true,
+          "userTrackingUsageDescription": "Usado para mostrar anúncios mais relevantes para você."
+        }
+      ],
+      "./plugins/with-ads-android-backend.js",
+      [
+        "./modules/play-games/app.plugin.js",
+        {
+          "projectId": ""
+        }
       ]
     ],
-
-    "extra": { "eas": { "projectId": "7a69fe0b-a548-4082-8bcc-cf0df6422439" } },
+    "extra": {
+      "eas": {
+        "projectId": "7a69fe0b-a548-4082-8bcc-cf0df6422439"
+      }
+    },
     "owner": "eduardolivip"
   }
 }

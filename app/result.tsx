@@ -1,16 +1,20 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import React from "react";
 import {
-  SafeAreaView,
   View,
   Text,
   StyleSheet,
+  Pressable,
   ImageBackground,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Resultado from "../components/questionario/Resultado";
 import CosmicButton from "../components/ui/CosmicButton";
 import { addResult } from "../lib/history";
-import ViewShot, { captureRef } from "react-native-view-shot";
+import { recordGame, MEDALS } from "../lib/progress";
+import { registerRoundFinished, showAdThen } from "../lib/ads";
+import { syncAchievements } from "../lib/playGames";
+import ViewShot, { captureRef, type ViewShotRef } from "react-native-view-shot";
 import * as Sharing from "expo-sharing";
 import { Image as ExpoImage } from "expo-image";
 import { t } from "../src/i18n";
@@ -23,24 +27,49 @@ export default function ResultScreen() {
     pontuacao = "0",
     totalDePerguntas = "0",
     review = "[]",
+    nivel = "iniciante",
+    daily = "0",
   } = useLocalSearchParams<{
     pontuacao?: string;
     totalDePerguntas?: string;
     review?: string;
+    nivel?: string;
+    daily?: string;
   }>();
 
   const pts = Number(pontuacao);
   const tot = Number(totalDePerguntas);
   const percent = Math.round((pts / Math.max(1, tot)) * 100);
 
+  const [newMedals, setNewMedals] = React.useState<typeof MEDALS>([]);
+  const [streak, setStreak] = React.useState(0);
+
   const savedRef = React.useRef(false);
   React.useEffect(() => {
     if (savedRef.current) return;
     savedRef.current = true;
     addResult(pts, tot).catch(() => {});
-  }, [pts, tot]);
+    registerRoundFinished();
+    let answers = [];
+    try {
+      answers = JSON.parse(String(review) || "[]");
+    } catch {}
+    recordGame({
+      total: tot,
+      correct: pts,
+      nivel: nivel === "medio" ? "medio" : "iniciante",
+      daily: daily === "1",
+      answers,
+    })
+      .then(({ newMedals, stats }) => {
+        setNewMedals(newMedals);
+        setStreak(stats.dayStreak);
+        syncAchievements(stats);
+      })
+      .catch(() => {});
+  }, [pts, tot, review, nivel, daily]);
 
-  const shotRef = React.useRef<View>(null);
+  const shotRef = React.useRef<ViewShotRef>(null);
 
   async function shareImage() {
     try {
@@ -85,6 +114,17 @@ export default function ResultScreen() {
             <Text style={s.shareSub}>{t("result.percent", { percent })}</Text>
           </ViewShot>
 
+          {newMedals.length > 0 ? (
+            <Pressable style={s.medalBanner} onPress={() => router.push("/medals")}>
+              <Text style={s.medalTitle}>🏅 {t("result.new_medal")}</Text>
+              <Text style={s.medalNames}>
+                {newMedals.map((m) => `${m.emoji} ${t(`medal.${m.id}.name`)}`).join("   ")}
+              </Text>
+            </Pressable>
+          ) : streak >= 2 ? (
+            <Text style={s.streakTxt}>{t("result.streak", { n: streak })}</Text>
+          ) : null}
+
           <View style={s.btnCol}>
             <CosmicButton
               onPress={() =>
@@ -100,7 +140,7 @@ export default function ResultScreen() {
             </CosmicButton>
 
             <CosmicButton
-              onPress={() => router.replace("/")}
+              onPress={() => showAdThen(() => router.replace("/"))}
               width={220}
               style={{ marginBottom: 8 }}
             >
@@ -109,10 +149,12 @@ export default function ResultScreen() {
 
             <CosmicButton
               onPress={() =>
-                router.replace({
-                  pathname: "/quiz",
-                  params: { n: String(tot) },
-                })
+                showAdThen(() =>
+                  router.replace({
+                    pathname: "/quiz",
+                    params: { n: String(tot), nivel: String(nivel) },
+                  })
+                )
               }
               width={220}
               style={{ marginBottom: 8 }}
@@ -159,7 +201,7 @@ const s = StyleSheet.create({
     borderColor: "rgba(0,229,255,0.25)",
   },
   shareTint: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: "rgba(0,0,0,0.35)",
   },
   shareTitle: {
@@ -169,4 +211,17 @@ const s = StyleSheet.create({
   },
   shareScore: { color: "#fff", fontSize: 48, fontWeight: "800", marginTop: 6 },
   shareSub: { color: "#B9C2CC", marginTop: 4 },
+  medalBanner: {
+    marginTop: 14,
+    alignItems: "center",
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 14,
+    backgroundColor: "rgba(140,120,255,0.22)",
+    borderWidth: 1,
+    borderColor: "rgba(183,169,255,0.7)",
+  },
+  medalTitle: { color: "#FFFFFF", fontFamily: "CHAKRAPETCH_BOLD", fontSize: 16 },
+  medalNames: { color: "#E6E0FF", fontSize: 14, marginTop: 2, textAlign: "center" },
+  streakTxt: { marginTop: 14, textAlign: "center", color: "#FFC27A", fontWeight: "700" },
 });

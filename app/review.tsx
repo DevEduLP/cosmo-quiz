@@ -2,7 +2,6 @@
 import React from "react";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import {
-  SafeAreaView,
   View,
   Text,
   StyleSheet,
@@ -10,6 +9,7 @@ import {
   ImageBackground,
   Pressable,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLang } from "../src/i18n";
 

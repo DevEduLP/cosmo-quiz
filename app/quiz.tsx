@@ -1,7 +1,8 @@
 // app/quiz.tsx
 import React from "react";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { SafeAreaView, View, Text, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Enunciado from "../components/questionario/Enunciado";
 import Opcao from "../components/questionario/Opcao";
 import CosmicButton from "../components/ui/CosmicButton";
@@ -24,6 +25,7 @@ type PerguntaCanon = {
   resposta: number;
   nivel?: NivelAny;
   explicacao?: string;
+  orig?: number[]; // posição embaralhada -> índice original da alternativa
 };
 
 // ---- Helpers
@@ -72,7 +74,7 @@ function shuffleOpcoes(q: PerguntaCanon, rnd: () => number): PerguntaCanon {
   }
   const opcoes = pairs.map((p) => p.t);
   const resposta = pairs.findIndex((p) => p.i === q.resposta);
-  return { ...q, opcoes, resposta };
+  return { ...q, opcoes, resposta, orig: pairs.map((p) => p.i) };
 }
 function dailySeed() {
   const d = new Date();
@@ -188,6 +190,8 @@ export default function QuizScreen() {
         pontuacao: String(acertos),
         totalDePerguntas: String(total),
         review: JSON.stringify(answersRef.current),
+        nivel: NIVEL,
+        daily,
       },
     });
     return null;
@@ -208,7 +212,9 @@ export default function QuizScreen() {
           : Haptics.NotificationFeedbackType.Error
       ).catch(() => {});
     }
-    answersRef.current[i] = { id: q.id, escolhida: ind, correta: q.resposta };
+    // guarda os índices ORIGINAIS do banco, para a revisão mostrar os textos certos
+    const orig = q.orig ?? q.opcoes.map((_, k) => k);
+    answersRef.current[i] = { id: q.id, escolhida: orig[ind], correta: orig[q.resposta] };
   }
 
   function proxima() {
@@ -225,6 +231,8 @@ export default function QuizScreen() {
           pontuacao: String(acertos),
           totalDePerguntas: String(total),
           review: JSON.stringify(answersRef.current),
+          nivel: NIVEL,
+          daily,
         },
       });
     }

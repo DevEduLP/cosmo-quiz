@@ -1,7 +1,6 @@
 import React from "react";
 import { Stack, useRouter } from "expo-router";
 import {
-  SafeAreaView,
   View,
   Text,
   StyleSheet,
@@ -10,6 +9,7 @@ import {
   Pressable,
   Alert,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { getLastResults, clearHistory, QuizResult } from "../lib/history";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLocale } from "../src/i18n";
