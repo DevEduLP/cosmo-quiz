@@ -145,7 +145,7 @@ const s = StyleSheet.create({
     marginTop: 110,
     color: "#FFF",
     textAlign: "center",
-    fontFamily: "CAPITOLCITY",
+    fontFamily: "CHAKRAPETCH_SEMIBOLD",
     fontSize: 26,
     marginBottom: 8,
   },

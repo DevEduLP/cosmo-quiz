@@ -105,7 +105,7 @@ const s = StyleSheet.create({
     marginBottom: 6,
     fontSize: 28,
     color: "#FFFFFF",
-    fontFamily: "SOLARSPACEDEMO-Regular",
+    fontFamily: "RUBIKMOONROCKS",
   },
   card: {
     width: "100%",

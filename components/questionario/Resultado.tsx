@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
   texto: {
     color: "#bbb",
     fontSize: 20,
-    fontFamily: 'CAPITOLCITY'
+    fontFamily: 'CHAKRAPETCH_SEMIBOLD'
   },
   destaque: {
     color: "white",
     fontSize: 60,
-    fontFamily: 'CAPITOLCITY',
+    fontFamily: 'CHAKRAPETCH_SEMIBOLD',
   },
   botao: {
     marginTop: 20,

@@ -1,16 +1,16 @@
-import "react-native-reanimated";
 import React from "react";
 import { Stack, SplashScreen } from 'expo-router'
 import { useFonts } from 'expo-font'
 import { View } from "react-native";
+import { SettingsProvider } from "@/lib/settings";
 
 SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
     const [fontsLoaded] = useFonts({
-        'SOLARSPACEDEMO-Regular': require('@/assets/fonts/SOLARSPACEDEMO-Regular.otf'),
-        SPACEMISSION: require('@/assets/fonts/SPACEMISSION.otf'),
-        CAPITOLCITY: require('@/assets/fonts/capitolcity.ttf'),
+        RUBIKMOONROCKS: require('@/assets/fonts/RubikMoonrocks-Regular.ttf'),
+        CHAKRAPETCH_BOLD: require('@/assets/fonts/ChakraPetch-BoldItalic.ttf'),
+        CHAKRAPETCH_SEMIBOLD: require('@/assets/fonts/ChakraPetch-SemiBoldItalic.ttf'),
     })
 
     React.useEffect(() => {
@@ -24,10 +24,12 @@ export default function RootLayout() {
       if (!fontsLoaded) return <View />;
 
     return (
-        <Stack screenOptions={{ headerShown: false,
-            contentStyle: {}
-         }}>
-            <Stack.Screen name="index" />
-        </Stack>
+        <SettingsProvider>
+            <Stack screenOptions={{ headerShown: false,
+                contentStyle: {}
+             }}>
+                <Stack.Screen name="index" />
+            </Stack>
+        </SettingsProvider>
     )
 }
