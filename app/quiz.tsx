@@ -1,7 +1,8 @@
 // app/quiz.tsx
 import React from "react";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { SafeAreaView, View, Text, StyleSheet, ImageBackground } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Enunciado from "../components/questionario/Enunciado";
 import Opcao from "../components/questionario/Opcao";
 import CosmicButton from "../components/ui/CosmicButton";

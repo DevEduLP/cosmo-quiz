@@ -1,16 +1,16 @@
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
 import React from "react";
 import {
-  SafeAreaView,
   View,
   Text,
   StyleSheet,
   ImageBackground,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Resultado from "../components/questionario/Resultado";
 import CosmicButton from "../components/ui/CosmicButton";
 import { addResult } from "../lib/history";
-import ViewShot, { captureRef } from "react-native-view-shot";
+import ViewShot, { captureRef, type ViewShotRef } from "react-native-view-shot";
 import * as Sharing from "expo-sharing";
 import { Image as ExpoImage } from "expo-image";
 import { t } from "../src/i18n";
@@ -40,7 +40,7 @@ export default function ResultScreen() {
     addResult(pts, tot).catch(() => {});
   }, [pts, tot]);
 
-  const shotRef = React.useRef<View>(null);
+  const shotRef = React.useRef<ViewShotRef>(null);
 
   async function shareImage() {
     try {
@@ -159,7 +159,7 @@ const s = StyleSheet.create({
     borderColor: "rgba(0,229,255,0.25)",
   },
   shareTint: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: "rgba(0,0,0,0.35)",
   },
   shareTitle: {

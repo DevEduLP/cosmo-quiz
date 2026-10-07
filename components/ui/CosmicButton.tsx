@@ -51,7 +51,7 @@ export default function CosmicButton({
         />
 
         {/* estrelinhas */}
-        <View pointerEvents="none" style={StyleSheet.absoluteFillObject}>
+        <View pointerEvents="none" style={StyleSheet.absoluteFill}>
           <View style={[styles.star, { top: 6, left: 12 }]} />
           <View style={[styles.star, { top: 12, right: 18, width: 3, height: 3 }]} />
           <View style={[styles.star, { bottom: 10, left: 38, opacity: 0.7 }]} />
@@ -75,7 +75,7 @@ export default function CosmicButton({
 const styles = StyleSheet.create({
   container: { borderRadius: R, alignItems: "center", overflow: "visible", alignSelf: "center" },
   animatedBorder: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     borderRadius: R,
     shadowColor: "#2A2D6B",
     shadowOpacity: 0.45,
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(0,229,255,0.3)",
   },
-  blur: { ...StyleSheet.absoluteFillObject, borderRadius: R },
+  blur: { ...StyleSheet.absoluteFill, borderRadius: R },
   press: {
     paddingVertical: 14,
     paddingHorizontal: 18,

@@ -7,13 +7,13 @@ import {
   Text,
   StyleSheet,
   Image,
-  SafeAreaView,
   Pressable,
   Modal,
   KeyboardAvoidingView,
   Platform,
   TextInput,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLang, setLang, type Lang } from "../src/i18n"; // <-- caminho correto (minúsculo)
@@ -125,7 +125,7 @@ export default function Home() {
               resizeMode="contain"
               accessible
               accessibilityRole="image"
-              accessibilityLabel="App logo"
+              accessibilityLabel="Livi Studio"
             />
           </View>
         </View>
@@ -438,8 +438,8 @@ const styles = StyleSheet.create({
     marginBottom: 700,
   },
   footerLogo: {
-    width: 350, // ajuste como preferir
-    height: 120, // ajuste conforme a proporção da tua logo
+    width: 150,
+    height: 76, // proporção da logo Livi Studio (~2:1)
     opacity: 0.9,
   },
 });
