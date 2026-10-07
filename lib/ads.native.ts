@@ -15,7 +15,7 @@ const Ads: typeof import("react-native-google-mobile-ads") | null = IN_EXPO_GO
 // Enquanto estiverem vazios, o build de produção NÃO mostra anúncios.
 // Lembre de trocar também o androidAppId no app.json.
 const PROD_INTERSTITIAL = Platform.select({
-  android: "",
+  android: "ca-app-pub-3647311166681955/9700464804",
   ios: "",
   default: "",
 });

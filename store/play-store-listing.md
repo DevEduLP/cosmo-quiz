@@ -110,7 +110,7 @@ Get ready for liftoff and find out how much you really know about the Universe! 
 |---|---|---|
 | Ícone do app | 512×512 PNG, até 1 MB | `store/icon-512.png` |
 | Imagem de destaque | 1024×500 PNG/JPG | `store/feature-graphic.png` |
-| Capturas de celular | 2 a 8 imagens, 9:16, lados entre 320 e 3840 px | **pendente** (você vai refazer) |
+| Capturas de celular | 2 a 8 imagens, proporção até 2:1, lados entre 320 e 3840 px | `store/screenshots/pt-*.png` (7 telas, 1080×2160) e `en-*.png` para a tradução |
 
 ---
 
@@ -144,7 +144,8 @@ Get ready for liftoff and find out how much you really know about the Universe! 
 | Atividade no app → **Interações com o app** | Publicidade ou marketing · Análise · Prevenção de fraudes |
 | Informações e desempenho do app → **Registros de falhas** e **Diagnóstico** | Análise · Prevenção de fraudes |
 | Identificadores do dispositivo ou outros → **ID do dispositivo ou outros IDs** | Publicidade ou marketing · Análise · Prevenção de fraudes |
-| Atividade no app → **Outras ações** (conquistas do Play Games) | Funcionalidade do app |
+| Informações pessoais → **IDs de usuários** (perfil do Play Games) | Funcionalidade do app · Análise |
+| Atividade no app → **Outras ações** e **Outro conteúdo gerado pelo usuário** (conquistas e XP do Play Games) | Funcionalidade do app |
 
   - (Histórico, medalhas, idioma, vibração e contador de rodadas ficam só no aparelho e **não** entram aqui.)
   - Referências oficiais: “Prepare seu app para o formulário de Segurança dos dados” (ajuda do AdMob) e a página de divulgação de dados do Play Games Services (developer.android.com/games/pgs). Confira as duas na hora de preencher, porque o Google atualiza essas listas.

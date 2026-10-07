@@ -45,7 +45,7 @@
       [
         "react-native-google-mobile-ads",
         {
-          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "androidAppId": "ca-app-pub-3647311166681955~8702333049",
           "iosAppId": "ca-app-pub-3940256099942544~1458002511",
           "delayAppMeasurementInit": true,
           "userTrackingUsageDescription": "Usado para mostrar anúncios mais relevantes para você."
@@ -55,7 +55,7 @@
       [
         "./modules/play-games/app.plugin.js",
         {
-          "projectId": ""
+          "projectId": "362544597238"
         }
       ]
     ],
