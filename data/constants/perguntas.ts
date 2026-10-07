@@ -705,6 +705,966 @@ const perguntas: Pergunta[] = [
     resposta: 2,
     explicacao: 'A atmosfera espessa de CO₂ provoca efeito estufa extremo, elevando a superfície a ~465 °C.'
   },
+  {
+    id: 81,
+    nivel: 'iniciante',
+    enunciado: "Quem foi o primeiro ser humano a ir ao espaço?",
+    opcoes: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+    resposta: 2,
+    explicacao: "Em 12 de abril de 1961, o soviético Yuri Gagarin deu uma volta completa na Terra a bordo da Vostok 1."
+  },
+  {
+    id: 82,
+    nivel: 'iniciante',
+    enunciado: "Quem foi o primeiro ser humano a pisar na Lua?",
+    opcoes: ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"],
+    resposta: 1,
+    explicacao: "Armstrong pisou na Lua em 20 de julho de 1969 (Apollo 11). Buzz Aldrin desceu logo depois, e Michael Collins ficou em órbita."
+  },
+  {
+    id: 83,
+    nivel: 'iniciante',
+    enunciado: "Quem foi a primeira mulher a ir ao espaço?",
+    opcoes: ["Valentina Tereshkova", "Sally Ride", "Mae Jemison", "Svetlana Savitskaya"],
+    resposta: 0,
+    explicacao: "A soviética Valentina Tereshkova voou na Vostok 6 em junho de 1963 e deu 48 voltas na Terra."
+  },
+  {
+    id: 84,
+    nivel: 'iniciante',
+    enunciado: "Qual foi o primeiro animal a orbitar a Terra?",
+    opcoes: ["O chimpanzé Ham", "A gata Félicette", "O macaco Albert", "A cadela Laika"],
+    resposta: 3,
+    explicacao: "Laika foi lançada em novembro de 1957 a bordo do Sputnik 2. Ham e Albert fizeram voos que não chegaram a completar uma órbita."
+  },
+  {
+    id: 85,
+    nivel: 'iniciante',
+    enunciado: "Quem é o primeiro astronauta brasileiro, que foi à Estação Espacial Internacional em 2006?",
+    opcoes: ["Santos Dumont", "César Lattes", "Marcos Pontes", "Bartolomeu de Gusmão"],
+    resposta: 2,
+    explicacao: "Marcos Pontes passou cerca de 10 dias no espaço na Missão Centenário, entre março e abril de 2006."
+  },
+  {
+    id: 86,
+    nivel: 'iniciante',
+    enunciado: "O que é o Sol?",
+    opcoes: ["Um planeta", "Uma estrela", "Uma galáxia", "Um cometa"],
+    resposta: 1,
+    explicacao: "O Sol é uma estrela de tamanho médio, como bilhões de outras que vemos à noite. Ele só parece maior porque está muito mais perto."
+  },
+  {
+    id: 87,
+    nivel: 'iniciante',
+    enunciado: "Qual é o terceiro planeta a partir do Sol?",
+    opcoes: ["Terra", "Marte", "Vênus", "Júpiter"],
+    resposta: 0,
+    explicacao: "A ordem é: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno."
+  },
+  {
+    id: 88,
+    nivel: 'iniciante',
+    enunciado: "Qual planeta fica entre a Terra e Júpiter?",
+    opcoes: ["Vênus", "Saturno", "Mercúrio", "Marte"],
+    resposta: 3,
+    explicacao: "Marte é o quarto planeta. Depois dele vem o cinturão de asteroides e, então, Júpiter."
+  },
+  {
+    id: 89,
+    nivel: 'iniciante',
+    enunciado: "Quantas luas naturais a Terra tem?",
+    opcoes: ["2", "0", "1", "3"],
+    resposta: 2,
+    explicacao: "A Terra tem uma única lua natural. Às vezes pequenos asteroides são capturados por alguns meses (\"minilua\"), mas não ficam."
+  },
+  {
+    id: 90,
+    nivel: 'iniciante',
+    enunciado: "O que causa o dia e a noite na Terra?",
+    opcoes: ["A translação da Terra ao redor do Sol", "A rotação da Terra em torno do próprio eixo", "A Lua bloqueando o Sol", "A distância variável entre a Terra e o Sol"],
+    resposta: 1,
+    explicacao: "Ao girar, a Terra expõe metade da sua superfície ao Sol (dia), enquanto a outra metade fica na sombra (noite)."
+  },
+  {
+    id: 91,
+    nivel: 'iniciante',
+    enunciado: "Qual planeta é chamado de \"gêmeo\" da Terra por ter tamanho parecido?",
+    opcoes: ["Vênus", "Marte", "Mercúrio", "Netuno"],
+    resposta: 0,
+    explicacao: "Vênus tem cerca de 95% do diâmetro da Terra, mas é um mundo infernal, com superfície a ~465 °C."
+  },
+  {
+    id: 92,
+    nivel: 'iniciante',
+    enunciado: "O que é uma constelação?",
+    opcoes: ["Um conjunto de planetas alinhados", "Uma galáxia pequena", "Uma nuvem de gás", "Um grupo de estrelas que forma um desenho no céu"],
+    resposta: 3,
+    explicacao: "As estrelas de uma constelação parecem próximas no céu, mas em geral estão a distâncias muito diferentes de nós. Ex.: Escorpião, Leão e Cruzeiro do Sul."
+  },
+  {
+    id: 93,
+    nivel: 'iniciante',
+    enunciado: "As Três Marias fazem parte de qual constelação?",
+    opcoes: ["Escorpião", "Cruzeiro do Sul", "Órion", "Ursa Maior"],
+    resposta: 2,
+    explicacao: "Alnitak, Alnilam e Mintaka formam o Cinturão de Órion, chamado de Três Marias no Brasil."
+  },
+  {
+    id: 94,
+    nivel: 'iniciante',
+    enunciado: "Do que os cometas são feitos principalmente?",
+    opcoes: ["Ferro e níquel", "Gelo e poeira", "Gás hidrogênio", "Lava solidificada"],
+    resposta: 1,
+    explicacao: "Cometas são \"bolas de neve sujas\". Perto do Sol, o gelo vira gás e forma a cabeleira e a cauda."
+  },
+  {
+    id: 95,
+    nivel: 'iniciante',
+    enunciado: "Onde fica o cinturão principal de asteroides?",
+    opcoes: ["Entre Marte e Júpiter", "Entre a Terra e Marte", "Depois de Netuno", "Entre Vênus e a Terra"],
+    resposta: 0,
+    explicacao: "O cinturão principal reúne milhões de asteroides entre as órbitas de Marte e Júpiter."
+  },
+  {
+    id: 96,
+    nivel: 'iniciante',
+    enunciado: "Quanto tempo a luz do Sol leva para chegar à Terra?",
+    opcoes: ["Cerca de 8 segundos", "Cerca de 1 hora", "Cerca de 1 dia", "Cerca de 8 minutos"],
+    resposta: 3,
+    explicacao: "A luz percorre os ~150 milhões de km entre o Sol e a Terra em cerca de 8 minutos e 20 segundos."
+  },
+  {
+    id: 97,
+    nivel: 'iniciante',
+    enunciado: "Quantas Terras caberiam, lado a lado, no diâmetro do Sol?",
+    opcoes: ["Cerca de 10", "Cerca de 1.000", "Cerca de 109", "Cerca de 1 milhão"],
+    resposta: 2,
+    explicacao: "O diâmetro do Sol é ~109 vezes o da Terra. Já em volume, caberiam cerca de 1,3 milhão de Terras dentro dele."
+  },
+  {
+    id: 98,
+    nivel: 'iniciante',
+    enunciado: "Qual é o principal elemento que forma o Sol?",
+    opcoes: ["Hélio", "Hidrogênio", "Oxigênio", "Ferro"],
+    resposta: 1,
+    explicacao: "Cerca de 73% da massa do Sol é hidrogênio e cerca de 25% é hélio."
+  },
+  {
+    id: 99,
+    nivel: 'iniciante',
+    enunciado: "Quem descobriu as quatro maiores luas de Júpiter, em 1610?",
+    opcoes: ["Galileu Galilei", "Isaac Newton", "Nicolau Copérnico", "Johannes Kepler"],
+    resposta: 0,
+    explicacao: "Io, Europa, Ganimedes e Calisto são chamadas de luas galileanas em homenagem a Galileu."
+  },
+  {
+    id: 100,
+    nivel: 'iniciante',
+    enunciado: "Qual força mantém os planetas em órbita ao redor do Sol?",
+    opcoes: ["O magnetismo", "O vento solar", "A força do atrito", "A gravidade"],
+    resposta: 3,
+    explicacao: "A gravidade do Sol puxa os planetas, enquanto o movimento deles os impede de cair. O resultado é a órbita."
+  },
+  {
+    id: 101,
+    nivel: 'iniciante',
+    enunciado: "Quanto você \"pesaria\" na Lua, comparado à Terra?",
+    opcoes: ["Metade", "O dobro", "Cerca de 1/6", "O mesmo"],
+    resposta: 2,
+    explicacao: "A gravidade na superfície da Lua é cerca de 16,5% da terrestre. Sua massa continua igual; só o peso muda."
+  },
+  {
+    id: 102,
+    nivel: 'iniciante',
+    enunciado: "Qual é a agência espacial dos Estados Unidos?",
+    opcoes: ["ESA", "NASA", "JAXA", "Roscosmos"],
+    resposta: 1,
+    explicacao: "A NASA foi criada em 1958. A ESA é europeia, a JAXA é japonesa e a Roscosmos é russa."
+  },
+  {
+    id: 103,
+    nivel: 'iniciante',
+    enunciado: "Qual é a idade aproximada do Universo?",
+    opcoes: ["13,8 bilhões de anos", "4,6 bilhões de anos", "1 bilhão de anos", "100 bilhões de anos"],
+    resposta: 0,
+    explicacao: "A idade é calculada principalmente a partir da radiação cósmica de fundo, a luz mais antiga que conseguimos observar."
+  },
+  {
+    id: 104,
+    nivel: 'iniciante',
+    enunciado: "Qual é a idade aproximada do Sistema Solar?",
+    opcoes: ["13,8 bilhões de anos", "500 milhões de anos", "10 mil anos", "4,6 bilhões de anos"],
+    resposta: 3,
+    explicacao: "A idade vem da datação de meteoritos, os materiais mais antigos do Sistema Solar."
+  },
+  {
+    id: 105,
+    nivel: 'iniciante',
+    enunciado: "Qual é o nome da teoria mais aceita sobre a origem do Universo?",
+    opcoes: ["Estado Estacionário", "Big Crunch", "Big Bang", "Geocentrismo"],
+    resposta: 2,
+    explicacao: "Segundo o Big Bang, o Universo começou muito quente e denso e vem se expandindo desde então."
+  },
+  {
+    id: 106,
+    nivel: 'iniciante',
+    enunciado: "Qual é a distância média entre a Terra e a Lua?",
+    opcoes: ["Cerca de 38 mil km", "Cerca de 384 mil km", "Cerca de 3,8 milhões de km", "Cerca de 150 milhões de km"],
+    resposta: 1,
+    explicacao: "Daria para enfileirar todos os outros planetas do Sistema Solar nesse espaço. 150 milhões de km é a distância até o Sol."
+  },
+  {
+    id: 107,
+    nivel: 'iniciante',
+    enunciado: "O que é uma supernova?",
+    opcoes: ["A explosão de uma estrela", "O nascimento de um planeta", "Uma estrela muito jovem", "Um cometa muito brilhante"],
+    resposta: 0,
+    explicacao: "Uma supernova pode brilhar mais que uma galáxia inteira por semanas e espalha elementos como ferro e ouro pelo espaço."
+  },
+  {
+    id: 108,
+    nivel: 'iniciante',
+    enunciado: "O que é uma nebulosa?",
+    opcoes: ["Um tipo de planeta", "Uma estrela apagada", "Um buraco negro pequeno", "Uma nuvem de gás e poeira no espaço"],
+    resposta: 3,
+    explicacao: "Muitas nebulosas são berçários de estrelas, como a Nebulosa de Órion."
+  },
+  {
+    id: 109,
+    nivel: 'iniciante',
+    enunciado: "O que são as manchas solares?",
+    opcoes: ["Planetas passando na frente do Sol", "Buracos na superfície do Sol", "Regiões mais frias e escuras da superfície do Sol", "Sombras da Lua no Sol"],
+    resposta: 2,
+    explicacao: "São áreas com campos magnéticos intensos, até cerca de 2.000 °C mais frias que o resto da superfície, por isso parecem escuras."
+  },
+  {
+    id: 110,
+    nivel: 'iniciante',
+    enunciado: "Qual é o programa da NASA para levar seres humanos de volta à Lua?",
+    opcoes: ["Apollo", "Artemis", "Gemini", "Mercury"],
+    resposta: 1,
+    explicacao: "Artemis é a irmã gêmea de Apolo na mitologia grega. O programa Apollo levou humanos à Lua entre 1969 e 1972."
+  },
+  {
+    id: 111,
+    nivel: 'iniciante',
+    enunciado: "Qual planeta tem a lua Europa, que pode esconder um oceano sob o gelo?",
+    opcoes: ["Júpiter", "Saturno", "Marte", "Netuno"],
+    resposta: 0,
+    explicacao: "A sonda Europa Clipper, lançada em 2024, deve chegar a Júpiter em 2030 para estudar essa lua."
+  },
+  {
+    id: 112,
+    nivel: 'iniciante',
+    enunciado: "O que é um eclipse solar?",
+    opcoes: ["Quando a Terra passa entre o Sol e a Lua", "Quando o Sol se apaga por alguns minutos", "Quando uma nuvem cobre o Sol", "Quando a Lua passa entre o Sol e a Terra e esconde o Sol"],
+    resposta: 3,
+    explicacao: "Num eclipse solar total, o céu escurece em pleno dia. Nunca olhe para o Sol sem um filtro adequado!"
+  },
+  {
+    id: 113,
+    nivel: 'iniciante',
+    enunciado: "Por que o céu é azul durante o dia?",
+    opcoes: ["O céu reflete os oceanos", "O Sol emite apenas luz azul", "A atmosfera espalha mais a luz azul do Sol", "O espaço é azul"],
+    resposta: 2,
+    explicacao: "As moléculas do ar espalham mais as cores de onda curta, como o azul. É o chamado espalhamento de Rayleigh."
+  },
+  {
+    id: 114,
+    nivel: 'iniciante',
+    enunciado: "Por que as estrelas parecem \"piscar\"?",
+    opcoes: ["Porque elas acendem e apagam", "Por causa da turbulência do ar da atmosfera", "Porque giram muito rápido", "Porque estão se afastando"],
+    resposta: 1,
+    explicacao: "O ar em movimento desvia a luz das estrelas o tempo todo. Vistas do espaço, elas não piscam."
+  },
+  {
+    id: 115,
+    nivel: 'iniciante',
+    enunciado: "Por que não há som no espaço?",
+    opcoes: ["Porque não há ar para o som se propagar", "Porque é frio demais", "Porque a gravidade é fraca", "Porque a luz bloqueia o som"],
+    resposta: 0,
+    explicacao: "O som é uma vibração que precisa de um meio, como ar ou água. No vácuo do espaço, não há o que vibrar."
+  },
+  {
+    id: 116,
+    nivel: 'iniciante',
+    enunciado: "Qual estrela é conhecida como Estrela Polar?",
+    opcoes: ["Sirius", "Betelgeuse", "Vega", "Polaris"],
+    resposta: 3,
+    explicacao: "Polaris fica quase alinhada ao eixo de rotação da Terra, indicando o norte. Ela não aparece em boa parte do hemisfério sul."
+  },
+  {
+    id: 117,
+    nivel: 'iniciante',
+    enunciado: "Do que são feitos principalmente os anéis de Saturno?",
+    opcoes: ["Gás hélio", "Lava", "Pedaços de gelo de água", "Areia de ferro"],
+    resposta: 2,
+    explicacao: "São bilhões de partículas de gelo, de grãos minúsculos a blocos do tamanho de uma casa."
+  },
+  {
+    id: 118,
+    nivel: 'iniciante',
+    enunciado: "Quem propôs, no século XVI, que a Terra gira ao redor do Sol?",
+    opcoes: ["Ptolomeu", "Nicolau Copérnico", "Aristóteles", "Isaac Newton"],
+    resposta: 1,
+    explicacao: "Copérnico publicou o modelo heliocêntrico em 1543. Ptolomeu e Aristóteles defendiam a Terra no centro."
+  },
+  {
+    id: 119,
+    nivel: 'iniciante',
+    enunciado: "Quem formulou a lei da gravitação universal?",
+    opcoes: ["Isaac Newton", "Albert Einstein", "Galileu Galilei", "Stephen Hawking"],
+    resposta: 0,
+    explicacao: "Newton publicou a lei em 1687, no livro Principia. Einstein depois a ampliou com a relatividade geral."
+  },
+  {
+    id: 120,
+    nivel: 'iniciante',
+    enunciado: "Qual planeta flutuaria na água, por ter densidade menor que ela?",
+    opcoes: ["Júpiter", "Netuno", "Terra", "Saturno"],
+    resposta: 3,
+    explicacao: "A densidade média de Saturno é ~0,69 g/cm³, menor que a da água (1 g/cm³). Só faltaria uma banheira gigante!"
+  },
+  {
+    id: 121,
+    nivel: 'iniciante',
+    enunciado: "Qual planeta forma, junto com Urano, o grupo dos \"gigantes de gelo\"?",
+    opcoes: ["Saturno", "Júpiter", "Netuno", "Marte"],
+    resposta: 2,
+    explicacao: "Urano e Netuno têm muita água, amônia e metano em forma de \"gelos\", diferente de Júpiter e Saturno, que são quase só hidrogênio e hélio."
+  },
+  {
+    id: 122,
+    nivel: 'iniciante',
+    enunciado: "Qual foi a nave reutilizável da NASA que voou de 1981 a 2011?",
+    opcoes: ["O foguete Saturn V", "O Ônibus Espacial (Space Shuttle)", "A cápsula Soyuz", "A cápsula Dragon"],
+    resposta: 1,
+    explicacao: "Os ônibus espaciais fizeram 135 missões e ajudaram a construir a Estação Espacial e a consertar o Hubble."
+  },
+  {
+    id: 123,
+    nivel: 'iniciante',
+    enunciado: "Qual é o foguete gigante da SpaceX, o maior já construído?",
+    opcoes: ["Starship", "Falcon 9", "Saturn V", "Ariane 5"],
+    resposta: 0,
+    explicacao: "Com o propulsor Super Heavy, a Starship tem mais de 120 m de altura e é o foguete mais potente já lançado."
+  },
+  {
+    id: 124,
+    nivel: 'iniciante',
+    enunciado: "Quanto tempo os astronautas da Apollo levavam para ir da Terra à Lua?",
+    opcoes: ["Cerca de 3 horas", "Cerca de 3 meses", "Cerca de 3 anos", "Cerca de 3 dias"],
+    resposta: 3,
+    explicacao: "A Apollo 11 decolou em 16 de julho de 1969 e entrou em órbita lunar em 19 de julho."
+  },
+  {
+    id: 125,
+    nivel: 'iniciante',
+    enunciado: "Qual é a diferença entre astronomia e astrologia?",
+    opcoes: ["São a mesma coisa", "Astrologia estuda os planetas e astronomia estuda os signos", "Astronomia é uma ciência; astrologia não", "Astronomia só estuda o Sol"],
+    resposta: 2,
+    explicacao: "A astronomia usa observação e o método científico. A astrologia é uma crença sem comprovação científica."
+  },
+  {
+    id: 126,
+    nivel: 'iniciante',
+    enunciado: "O que é um solstício?",
+    opcoes: ["O dia em que o dia e a noite duram o mesmo", "O dia mais longo ou o mais curto do ano", "Um eclipse do Sol", "O alinhamento de todos os planetas"],
+    resposta: 1,
+    explicacao: "Os solstícios ocorrem por volta de 21 de junho e 21 de dezembro, quando o Sol atinge o ponto mais ao norte ou mais ao sul no céu."
+  },
+  {
+    id: 127,
+    nivel: 'iniciante',
+    enunciado: "O que é um equinócio?",
+    opcoes: ["Quando o dia e a noite têm quase a mesma duração", "O dia mais longo do ano", "Quando há duas luas cheias no mês", "Quando a Terra está mais perto do Sol"],
+    resposta: 0,
+    explicacao: "Os equinócios ocorrem por volta de 20 de março e 22 de setembro e marcam o início do outono e da primavera."
+  },
+  {
+    id: 128,
+    nivel: 'iniciante',
+    enunciado: "Como se chama a fase em que a Lua aparece totalmente iluminada?",
+    opcoes: ["Lua nova", "Quarto crescente", "Quarto minguante", "Lua cheia"],
+    resposta: 3,
+    explicacao: "Na Lua cheia, a Terra fica entre o Sol e a Lua, e vemos todo o lado iluminado dela."
+  },
+  {
+    id: 129,
+    nivel: 'iniciante',
+    enunciado: "Como se chama um pequeno corpo rochoso que orbita o Sol, como os do cinturão entre Marte e Júpiter?",
+    opcoes: ["Cometa", "Satélite", "Asteroide", "Estrela"],
+    resposta: 2,
+    explicacao: "Asteroides são rochosos ou metálicos. Cometas têm muito gelo e formam cauda perto do Sol."
+  },
+  {
+    id: 130,
+    nivel: 'iniciante',
+    enunciado: "Qual destes planetas é rochoso?",
+    opcoes: ["Júpiter", "Marte", "Saturno", "Netuno"],
+    resposta: 1,
+    explicacao: "Os planetas rochosos são Mercúrio, Vênus, Terra e Marte. Os outros quatro são gigantes gasosos ou de gelo."
+  },
+  {
+    id: 131,
+    nivel: 'iniciante',
+    enunciado: "Qual destes é o maior?",
+    opcoes: ["Uma galáxia", "Uma estrela", "Um sistema solar", "Um planeta"],
+    resposta: 0,
+    explicacao: "Uma galáxia reúne bilhões de estrelas, e muitas delas têm seus próprios sistemas de planetas."
+  },
+  {
+    id: 132,
+    nivel: 'iniciante',
+    enunciado: "Qual cor têm as estrelas mais quentes?",
+    opcoes: ["Vermelha", "Amarela", "Laranja", "Azul"],
+    resposta: 3,
+    explicacao: "As estrelas azuis passam de 10.000 °C na superfície. As vermelhas são as mais frias, com cerca de 3.000 °C."
+  },
+  {
+    id: 133,
+    nivel: 'iniciante',
+    enunciado: "Que tipo de estrela é o Sol?",
+    opcoes: ["Gigante vermelha", "Anã branca", "Anã amarela", "Supergigante azul"],
+    resposta: 2,
+    explicacao: "O Sol é uma estrela comum da sequência principal, do tipo G, que funde hidrogênio em hélio no núcleo."
+  },
+  {
+    id: 134,
+    nivel: 'iniciante',
+    enunciado: "O que é o eixo da Terra?",
+    opcoes: ["A linha do Equador", "A linha imaginária em torno da qual a Terra gira", "O caminho da Terra ao redor do Sol", "O centro do Sol"],
+    resposta: 1,
+    explicacao: "O eixo vai do Polo Norte ao Polo Sul e é inclinado cerca de 23,4°, o que causa as estações do ano."
+  },
+  {
+    id: 135,
+    nivel: 'iniciante',
+    enunciado: "Qual é a principal diferença entre uma estrela e um planeta?",
+    opcoes: ["A estrela produz luz própria por fusão nuclear", "O planeta é sempre maior", "A estrela é sempre fria", "O planeta brilha mais"],
+    resposta: 0,
+    explicacao: "Estrelas geram energia no núcleo. Planetas só brilham porque refletem a luz de uma estrela."
+  },
+  {
+    id: 136,
+    nivel: 'iniciante',
+    enunciado: "Como são chamados os viajantes espaciais da Rússia?",
+    opcoes: ["Taikonautas", "Astronautas", "Espaçonautas", "Cosmonautas"],
+    resposta: 3,
+    explicacao: "Na Rússia o termo é cosmonauta. Os viajantes espaciais da China costumam ser chamados de taikonautas."
+  },
+  {
+    id: 137,
+    nivel: 'iniciante',
+    enunciado: "Aquela faixa clara que cruza o céu em noites bem escuras é:",
+    opcoes: ["Uma nuvem de chuva", "A cauda de um cometa", "A Via Láctea vista de dentro", "Uma aurora"],
+    resposta: 2,
+    explicacao: "Como estamos dentro do disco da galáxia, vemos milhões de estrelas distantes formando uma faixa leitosa."
+  },
+  {
+    id: 138,
+    nivel: 'iniciante',
+    enunciado: "O que é um satélite artificial?",
+    opcoes: ["Uma lua natural", "Um objeto feito por humanos que orbita um astro", "Uma estrela pequena", "Um meteoro"],
+    resposta: 1,
+    explicacao: "Hoje há milhares de satélites em órbita da Terra, usados para GPS, internet, TV e previsão do tempo."
+  },
+  {
+    id: 139,
+    nivel: 'iniciante',
+    enunciado: "Qual é o maior planeta rochoso do Sistema Solar?",
+    opcoes: ["Terra", "Vênus", "Marte", "Mercúrio"],
+    resposta: 0,
+    explicacao: "A Terra é um pouco maior que Vênus e tem quase o dobro do diâmetro de Marte."
+  },
+  {
+    id: 140,
+    nivel: 'iniciante',
+    enunciado: "Qual é a estrela mais próxima da Terra?",
+    opcoes: ["Proxima Centauri", "Sirius", "Polaris", "O Sol"],
+    resposta: 3,
+    explicacao: "Pegadinha! O Sol é uma estrela e está a apenas 8 minutos-luz. A segunda mais próxima é Proxima Centauri, a 4,2 anos-luz."
+  },
+  {
+    id: 141,
+    nivel: 'medio',
+    enunciado: "Por que vemos sempre a mesma face da Lua?",
+    opcoes: ["A Lua não gira em torno de si", "A Terra bloqueia o outro lado", "A Lua gira em torno de si no mesmo tempo em que orbita a Terra", "O outro lado está sempre no escuro"],
+    resposta: 2,
+    explicacao: "É a rotação sincronizada: a gravidade da Terra \"travou\" a Lua, que leva ~27 dias tanto para girar quanto para dar uma volta."
+  },
+  {
+    id: 142,
+    nivel: 'medio',
+    enunciado: "O que é o \"lado oculto\" da Lua?",
+    opcoes: ["O lado que nunca recebe luz do Sol", "O lado que nunca fica voltado para a Terra", "A parte da Lua coberta de gelo", "A sombra da Terra na Lua"],
+    resposta: 1,
+    explicacao: "Ele recebe luz do Sol como o lado visível; só não o vemos daqui. A China pousou a Chang'e 4 lá em 2019."
+  },
+  {
+    id: 143,
+    nivel: 'medio',
+    enunciado: "Qual planeta é, em média, o mais próximo da Terra?",
+    opcoes: ["Mercúrio", "Vênus", "Marte", "Júpiter"],
+    resposta: 0,
+    explicacao: "Vênus chega mais perto, mas passa muito tempo do outro lado do Sol. Na média ao longo do tempo, Mercúrio é o mais próximo."
+  },
+  {
+    id: 144,
+    nivel: 'medio',
+    enunciado: "Qual planeta tem o maior número de luas conhecidas?",
+    opcoes: ["Júpiter", "Urano", "Netuno", "Saturno"],
+    resposta: 3,
+    explicacao: "Em 2025, Saturno passou de 270 luas confirmadas, bem à frente de Júpiter, que tem menos de 100."
+  },
+  {
+    id: 145,
+    nivel: 'medio',
+    enunciado: "Qual é o maior objeto do cinturão de asteroides?",
+    opcoes: ["Vesta", "Palas", "Ceres", "Eros"],
+    resposta: 2,
+    explicacao: "Ceres tem ~940 km de diâmetro e é classificado como planeta anão. Foi visitado pela sonda Dawn."
+  },
+  {
+    id: 146,
+    nivel: 'medio',
+    enunciado: "Qual foi a primeira estação espacial da história?",
+    opcoes: ["Skylab", "Salyut 1", "Mir", "Estação Espacial Internacional"],
+    resposta: 1,
+    explicacao: "A soviética Salyut 1 foi lançada em 1971. O Skylab americano veio em 1973 e a Mir em 1986."
+  },
+  {
+    id: 147,
+    nivel: 'medio',
+    enunciado: "Qual foi o primeiro veículo (rover) a andar em Marte?",
+    opcoes: ["Sojourner", "Curiosity", "Spirit", "Perseverance"],
+    resposta: 0,
+    explicacao: "O pequeno Sojourner, do tamanho de um micro-ondas, chegou em 1997 com a missão Mars Pathfinder."
+  },
+  {
+    id: 148,
+    nivel: 'medio',
+    enunciado: "Em qual cometa a missão Rosetta pousou o módulo Philae, em 2014?",
+    opcoes: ["Halley", "Hale-Bopp", "Shoemaker-Levy 9", "67P/Churyumov–Gerasimenko"],
+    resposta: 3,
+    explicacao: "Foi o primeiro pouso num cometa. A missão é da Agência Espacial Europeia (ESA)."
+  },
+  {
+    id: 149,
+    nivel: 'medio',
+    enunciado: "Qual sonda chinesa trouxe as primeiras amostras do lado oculto da Lua, em 2024?",
+    opcoes: ["Chang'e 4", "Tianwen-1", "Chang'e 6", "Yutu-2"],
+    resposta: 2,
+    explicacao: "A Chang'e 6 pousou no lado oculto e devolveu cerca de 2 kg de amostras à Terra em junho de 2024."
+  },
+  {
+    id: 150,
+    nivel: 'medio',
+    enunciado: "Qual planeta anão tem a lua Caronte?",
+    opcoes: ["Ceres", "Plutão", "Éris", "Haumea"],
+    resposta: 1,
+    explicacao: "Caronte tem cerca de metade do diâmetro de Plutão, e os dois giram em torno de um ponto entre eles."
+  },
+  {
+    id: 151,
+    nivel: 'medio',
+    enunciado: "Qual é o nome do enorme sistema de cânions de Marte?",
+    opcoes: ["Valles Marineris", "Grand Canyon", "Olympus Mons", "Tharsis"],
+    resposta: 0,
+    explicacao: "O Valles Marineris tem mais de 4.000 km de extensão e até 7 km de profundidade. Olympus Mons é um vulcão."
+  },
+  {
+    id: 152,
+    nivel: 'medio',
+    enunciado: "Como se chama o limite de um buraco negro do qual nada escapa, nem a luz?",
+    opcoes: ["Singularidade", "Disco de acreção", "Fotosfera", "Horizonte de eventos"],
+    resposta: 3,
+    explicacao: "Depois de cruzar o horizonte de eventos, nada consegue voltar. O disco de acreção é o gás que gira ao redor, do lado de fora."
+  },
+  {
+    id: 153,
+    nivel: 'medio',
+    enunciado: "Qual cientista mostrou que as órbitas dos planetas são elipses?",
+    opcoes: ["Galileu Galilei", "Tycho Brahe", "Johannes Kepler", "Nicolau Copérnico"],
+    resposta: 2,
+    explicacao: "Kepler publicou sua primeira lei em 1609, usando as observações precisas de Tycho Brahe."
+  },
+  {
+    id: 154,
+    nivel: 'medio',
+    enunciado: "A primeira imagem de um buraco negro, divulgada em 2019, mostra qual objeto?",
+    opcoes: ["Cygnus X-1", "M87*, no centro da galáxia M87", "O centro da galáxia de Andrômeda", "Um buraco negro dentro do Sistema Solar"],
+    resposta: 1,
+    explicacao: "A imagem foi feita pelo Event Horizon Telescope, uma rede de radiotelescópios espalhados pela Terra."
+  },
+  {
+    id: 155,
+    nivel: 'medio',
+    enunciado: "Qual observatório detectou ondas gravitacionais pela primeira vez, em 2015?",
+    opcoes: ["LIGO", "Hubble", "James Webb", "Arecibo"],
+    resposta: 0,
+    explicacao: "O LIGO captou a fusão de dois buracos negros, confirmando uma previsão de Einstein. A descoberta ganhou o Nobel de Física de 2017."
+  },
+  {
+    id: 156,
+    nivel: 'medio',
+    enunciado: "O que é a radiação cósmica de fundo em micro-ondas?",
+    opcoes: ["Radiação emitida pelo Sol", "Sinais de rádio de satélites", "A luz das galáxias vizinhas", "A luz que restou do Universo jovem, ~380 mil anos após o Big Bang"],
+    resposta: 3,
+    explicacao: "É a luz mais antiga que podemos observar, vinda de todas as direções do céu. Foi descoberta por acaso em 1965."
+  },
+  {
+    id: 157,
+    nivel: 'medio',
+    enunciado: "O que é a matéria escura?",
+    opcoes: ["Poeira que bloqueia a luz das estrelas", "O interior dos buracos negros", "Matéria que não emite luz, mas é detectada pela gravidade", "O espaço vazio entre as galáxias"],
+    resposta: 2,
+    explicacao: "Ela forma cerca de 85% de toda a matéria do Universo, mas ainda não sabemos do que é feita."
+  },
+  {
+    id: 158,
+    nivel: 'medio',
+    enunciado: "O que é um pulsar?",
+    opcoes: ["Uma estrela que muda de tamanho", "Uma estrela de nêutrons que gira muito rápido emitindo feixes de radiação", "Um planeta com anéis", "Um buraco negro em formação"],
+    resposta: 1,
+    explicacao: "Os feixes varrem o espaço como um farol. O primeiro pulsar foi descoberto por Jocelyn Bell Burnell em 1967."
+  },
+  {
+    id: 159,
+    nivel: 'medio',
+    enunciado: "No fim da vida, o Sol vai se tornar:",
+    opcoes: ["Uma anã branca", "Um buraco negro", "Uma estrela de nêutrons", "Uma supernova"],
+    resposta: 0,
+    explicacao: "O Sol não tem massa para explodir. Daqui a ~5 bilhões de anos, vai virar uma gigante vermelha e depois uma anã branca."
+  },
+  {
+    id: 160,
+    nivel: 'medio',
+    enunciado: "Qual é o objeto feito por humanos mais distante da Terra?",
+    opcoes: ["Voyager 2", "New Horizons", "Pioneer 10", "Voyager 1"],
+    resposta: 3,
+    explicacao: "Lançada em 1977, a Voyager 1 está a mais de 165 UA (mais de 24 bilhões de km) e ainda envia dados."
+  },
+  {
+    id: 161,
+    nivel: 'medio',
+    enunciado: "Qual é o maior planeta anão em diâmetro?",
+    opcoes: ["Éris", "Ceres", "Plutão", "Makemake"],
+    resposta: 2,
+    explicacao: "Plutão (~2.377 km) é um pouco maior que Éris, embora Éris tenha um pouco mais de massa."
+  },
+  {
+    id: 162,
+    nivel: 'medio',
+    enunciado: "Qual das luas de Marte está mais perto do planeta?",
+    opcoes: ["Deimos", "Fobos", "Caronte", "Tritão"],
+    resposta: 1,
+    explicacao: "Fobos orbita a cerca de 6.000 km da superfície e está se aproximando lentamente. Um dia deve se despedaçar."
+  },
+  {
+    id: 163,
+    nivel: 'medio',
+    enunciado: "Qual é a temperatura aproximada da superfície do Sol?",
+    opcoes: ["Cerca de 5.500 °C", "Cerca de 550 °C", "Cerca de 55.000 °C", "Cerca de 15 milhões °C"],
+    resposta: 0,
+    explicacao: "A superfície (fotosfera) tem ~5.500 °C. Já o núcleo chega a ~15 milhões °C."
+  },
+  {
+    id: 164,
+    nivel: 'medio',
+    enunciado: "Que porcentagem da massa do Sistema Solar está no Sol?",
+    opcoes: ["Cerca de 50%", "Cerca de 75%", "Cerca de 90%", "Cerca de 99,8%"],
+    resposta: 3,
+    explicacao: "Todos os planetas, luas, asteroides e cometas juntos somam só ~0,2% da massa. Júpiter é a maior parte disso."
+  },
+  {
+    id: 165,
+    nivel: 'medio',
+    enunciado: "Por que a Lua fica avermelhada num eclipse lunar total?",
+    opcoes: ["A Lua esquenta e brilha", "A poeira lunar reflete Marte", "A atmosfera da Terra desvia luz avermelhada até ela", "O Sol fica vermelho durante o eclipse"],
+    resposta: 2,
+    explicacao: "É a \"Lua de sangue\": a luz que atravessa a atmosfera da Terra fica avermelhada, pelo mesmo motivo do pôr do sol."
+  },
+  {
+    id: 166,
+    nivel: 'medio',
+    enunciado: "O que causa chuvas de meteoros como as Perseidas?",
+    opcoes: ["Explosões no Sol", "A Terra atravessando restos deixados por um cometa", "Asteroides colidindo com a Lua", "Satélites antigos caindo"],
+    resposta: 1,
+    explicacao: "Todo ano a Terra cruza a trilha de poeira de um cometa; as Perseidas vêm do cometa Swift-Tuttle e ocorrem em agosto."
+  },
+  {
+    id: 167,
+    nivel: 'medio',
+    enunciado: "Como se chama a linha que separa o dia da noite em um planeta ou na Lua?",
+    opcoes: ["Terminador", "Equador", "Meridiano", "Eclíptica"],
+    resposta: 0,
+    explicacao: "Perto do terminador, as sombras ficam longas, por isso é a melhor região para ver crateras na Lua com um telescópio."
+  },
+  {
+    id: 168,
+    nivel: 'medio',
+    enunciado: "Quanto dura um dia solar em Marte (chamado de \"sol\")?",
+    opcoes: ["Cerca de 10 horas", "Cerca de 58 dias", "Cerca de 12 horas", "Cerca de 24 h 40 min"],
+    resposta: 3,
+    explicacao: "Um dia em Marte é só ~40 minutos mais longo que o da Terra. As equipes dos rovers chegam a viver no \"horário marciano\"."
+  },
+  {
+    id: 169,
+    nivel: 'medio',
+    enunciado: "De que cor é o pôr do sol em Marte?",
+    opcoes: ["Vermelho-alaranjado", "Verde", "Azulado", "Roxo"],
+    resposta: 2,
+    explicacao: "A poeira fina de Marte espalha a luz azul na direção do Sol, criando um brilho azulado ao entardecer."
+  },
+  {
+    id: 170,
+    nivel: 'medio',
+    enunciado: "Qual sonda fez o primeiro pouso suave na Lua?",
+    opcoes: ["Apollo 11", "Luna 9", "Surveyor 1", "Chang'e 3"],
+    resposta: 1,
+    explicacao: "A soviética Luna 9 pousou em fevereiro de 1966 e enviou as primeiras fotos da superfície lunar."
+  },
+  {
+    id: 171,
+    nivel: 'medio',
+    enunciado: "Quantas pessoas já caminharam na Lua?",
+    opcoes: ["12", "6", "24", "2"],
+    resposta: 0,
+    explicacao: "Doze astronautas caminharam na Lua em seis missões Apollo, entre 1969 e 1972."
+  },
+  {
+    id: 172,
+    nivel: 'medio',
+    enunciado: "Qual foi a última missão Apollo a pousar na Lua?",
+    opcoes: ["Apollo 13", "Apollo 11", "Apollo 20", "Apollo 17"],
+    resposta: 3,
+    explicacao: "A Apollo 17 pousou em dezembro de 1972. A Apollo 13 não pousou por causa de uma explosão, e a Apollo 20 foi cancelada."
+  },
+  {
+    id: 173,
+    nivel: 'medio',
+    enunciado: "O diâmetro da Lua é aproximadamente que fração do diâmetro da Terra?",
+    opcoes: ["Cerca de 1/2", "Cerca de 1/10", "Cerca de 1/4", "Cerca de 1/100"],
+    resposta: 2,
+    explicacao: "A Lua tem ~3.474 km de diâmetro, contra ~12.742 km da Terra, ou seja, cerca de 27%."
+  },
+  {
+    id: 174,
+    nivel: 'medio',
+    enunciado: "O que é a \"zona habitável\" de uma estrela?",
+    opcoes: ["A região onde existe oxigênio", "A região onde um planeta poderia ter água líquida na superfície", "O lugar onde vivem alienígenas", "A área sem nenhuma radiação"],
+    resposta: 1,
+    explicacao: "Nem quente demais nem fria demais. Estar na zona habitável não garante vida, mas é um bom ponto de partida na busca."
+  },
+  {
+    id: 175,
+    nivel: 'medio',
+    enunciado: "Qual é a hipótese mais aceita para a origem da Lua?",
+    opcoes: ["Uma grande colisão entre a Terra jovem e um corpo do tamanho de Marte", "A Lua foi capturada pela gravidade da Terra", "A Lua se soltou do Oceano Pacífico", "A Lua se formou antes da Terra"],
+    resposta: 0,
+    explicacao: "O corpo que teria colidido com a Terra foi apelidado de Theia. Os detritos do impacto se juntaram e formaram a Lua."
+  },
+  {
+    id: 176,
+    nivel: 'medio',
+    enunciado: "Comparada à superfície do Sol, a coroa solar (sua camada externa) é:",
+    opcoes: ["Mais fria", "Da mesma temperatura", "Feita de gelo", "Muito mais quente, com mais de 1 milhão de °C"],
+    resposta: 3,
+    explicacao: "Por que a coroa é tão mais quente que a superfície ainda é um dos grandes mistérios da física solar."
+  },
+  {
+    id: 177,
+    nivel: 'medio',
+    enunciado: "Em que mês a Terra fica mais perto do Sol?",
+    opcoes: ["Julho", "Março", "Janeiro", "Setembro"],
+    resposta: 2,
+    explicacao: "O periélio ocorre por volta de 3 de janeiro, verão no hemisfério sul e inverno no norte. Prova de que as estações não vêm da distância."
+  },
+  {
+    id: 178,
+    nivel: 'medio',
+    enunciado: "O que são as Nuvens de Magalhães?",
+    opcoes: ["Nebulosas dentro do Sistema Solar", "Galáxias anãs vizinhas da Via Láctea", "Nuvens da atmosfera de Júpiter", "Restos de um cometa"],
+    resposta: 1,
+    explicacao: "As Grande e Pequena Nuvens de Magalhães são visíveis a olho nu no céu do hemisfério sul."
+  },
+  {
+    id: 179,
+    nivel: 'medio',
+    enunciado: "Qual é a velocidade de escape da Terra?",
+    opcoes: ["Cerca de 11,2 km/s", "Cerca de 1 km/s", "Cerca de 300.000 km/s", "Cerca de 100 km/s"],
+    resposta: 0,
+    explicacao: "É a velocidade mínima para escapar da gravidade terrestre sem propulsão extra: ~40.000 km/h."
+  },
+  {
+    id: 180,
+    nivel: 'medio',
+    enunciado: "O que são as Plêiades, também chamadas de Sete Irmãs?",
+    opcoes: ["Uma galáxia", "Sete planetas alinhados", "Uma nebulosa planetária", "Um aglomerado aberto de estrelas jovens"],
+    resposta: 3,
+    explicacao: "O aglomerado fica na constelação de Touro, a cerca de 440 anos-luz, e tem centenas de estrelas."
+  },
+  {
+    id: 181,
+    nivel: 'medio',
+    enunciado: "Quantas constelações oficiais existem?",
+    opcoes: ["12", "48", "88", "110"],
+    resposta: 2,
+    explicacao: "A União Astronômica Internacional definiu 88 constelações em 1922. As 12 do zodíaco são só uma parte delas."
+  },
+  {
+    id: 182,
+    nivel: 'medio',
+    enunciado: "O que faz os astronautas flutuarem na Estação Espacial?",
+    opcoes: ["Não existe gravidade lá", "Eles estão em queda livre contínua ao redor da Terra", "A estação tem ímãs especiais", "O ar lá dentro é mais denso"],
+    resposta: 1,
+    explicacao: "A gravidade na altura da estação ainda é ~90% da superfície. A estação e os astronautas \"caem\" juntos o tempo todo, sem nunca atingir o chão."
+  },
+  {
+    id: 183,
+    nivel: 'medio',
+    enunciado: "Qual é o centro de lançamento de foguetes no Maranhão?",
+    opcoes: ["Centro de Lançamento de Alcântara", "Barreira do Inferno", "Kourou", "Cabo Canaveral"],
+    resposta: 0,
+    explicacao: "Alcântara fica muito perto da Linha do Equador, o que economiza combustível nos lançamentos. A Barreira do Inferno fica no Rio Grande do Norte."
+  },
+  {
+    id: 184,
+    nivel: 'medio',
+    enunciado: "O que é o Cinturão de Kuiper?",
+    opcoes: ["O cinturão entre Marte e Júpiter", "Os anéis de Saturno", "Uma faixa de estrelas da Via Láctea", "Uma região de corpos gelados além de Netuno"],
+    resposta: 3,
+    explicacao: "Plutão é um dos maiores objetos do Cinturão de Kuiper. Muitos cometas de período curto vêm de lá."
+  },
+  {
+    id: 185,
+    nivel: 'medio',
+    enunciado: "Quanto vale 1 parsec, aproximadamente?",
+    opcoes: ["1 ano-luz", "100 UA", "3,26 anos-luz", "1 milhão de km"],
+    resposta: 2,
+    explicacao: "O parsec, unidade muito usada por astrônomos, vale ~31 trilhões de km."
+  },
+  {
+    id: 186,
+    nivel: 'medio',
+    enunciado: "Qual sonda foi a primeira a \"tocar\" o Sol, atravessando sua coroa em 2021?",
+    opcoes: ["Solar Orbiter", "Parker Solar Probe", "SOHO", "Voyager 2"],
+    resposta: 1,
+    explicacao: "A Parker Solar Probe também é o objeto mais rápido já feito por humanos, passando de 690.000 km/h perto do Sol."
+  },
+  {
+    id: 187,
+    nivel: 'medio',
+    enunciado: "Qual missão da NASA desviou a órbita de um asteroide de propósito, em 2022?",
+    opcoes: ["DART", "OSIRIS-REx", "Hayabusa2", "Lucy"],
+    resposta: 0,
+    explicacao: "A DART colidiu com Dimorphos e encurtou a órbita dele em cerca de 32 minutos: o primeiro teste de defesa planetária."
+  },
+  {
+    id: 188,
+    nivel: 'medio',
+    enunciado: "Qual missão trouxe à Terra amostras do asteroide Bennu, em 2023?",
+    opcoes: ["DART", "Hayabusa2", "Rosetta", "OSIRIS-REx"],
+    resposta: 3,
+    explicacao: "A cápsula da OSIRIS-REx pousou nos EUA em setembro de 2023. A japonesa Hayabusa2 trouxe amostras de outro asteroide, Ryugu."
+  },
+  {
+    id: 189,
+    nivel: 'medio',
+    enunciado: "Qual lua de Saturno tem lagos e mares de metano líquido?",
+    opcoes: ["Encélado", "Mimas", "Titã", "Reia"],
+    resposta: 2,
+    explicacao: "Titã é o único lugar além da Terra com líquidos estáveis na superfície. A NASA planeja enviar o drone Dragonfly para lá."
+  },
+  {
+    id: 190,
+    nivel: 'medio',
+    enunciado: "Qual lua de Saturno lembra a \"Estrela da Morte\" por causa de uma cratera enorme?",
+    opcoes: ["Titã", "Mimas", "Encélado", "Jápeto"],
+    resposta: 1,
+    explicacao: "A cratera Herschel tem ~130 km, cerca de um terço do diâmetro de Mimas."
+  },
+  {
+    id: 191,
+    nivel: 'medio',
+    enunciado: "Qual é a única sonda que já visitou Urano e Netuno?",
+    opcoes: ["Voyager 2", "Voyager 1", "Cassini", "Juno"],
+    resposta: 0,
+    explicacao: "A Voyager 2 passou por Urano em 1986 e por Netuno em 1989. Nenhuma outra sonda voltou lá desde então."
+  },
+  {
+    id: 192,
+    nivel: 'medio',
+    enunciado: "Qual missão orbitou Saturno de 2004 a 2017 e terminou mergulhando no planeta?",
+    opcoes: ["Galileo", "Juno", "New Horizons", "Cassini"],
+    resposta: 3,
+    explicacao: "A Cassini levou o módulo Huygens, que pousou em Titã em 2005, e descobriu os jatos de água de Encélado."
+  },
+  {
+    id: 193,
+    nivel: 'medio',
+    enunciado: "Por que existem anos bissextos?",
+    opcoes: ["Porque a Lua atrasa a Terra", "Para compensar os eclipses", "Porque a Terra leva cerca de 365 dias e 6 horas para dar a volta no Sol", "Por causa do horário de verão"],
+    resposta: 2,
+    explicacao: "As ~6 horas extras somam quase um dia a cada 4 anos, e esse dia vira o 29 de fevereiro."
+  },
+  {
+    id: 194,
+    nivel: 'medio',
+    enunciado: "O que é um quasar?",
+    opcoes: ["Uma estrela gigante azul", "O núcleo extremamente brilhante de uma galáxia, alimentado por um buraco negro supermassivo", "Um tipo de cometa", "Uma nebulosa em forma de anel"],
+    resposta: 1,
+    explicacao: "Os quasares estão entre os objetos mais luminosos do Universo e podem brilhar mais que toda a sua galáxia."
+  },
+  {
+    id: 195,
+    nivel: 'medio',
+    enunciado: "Como se chama o buraco negro supermassivo no centro da Via Láctea?",
+    opcoes: ["Sagitário A*", "M87*", "Cygnus X-1", "Órion A"],
+    resposta: 0,
+    explicacao: "Ele tem cerca de 4 milhões de vezes a massa do Sol e foi fotografado pelo Event Horizon Telescope em 2022."
+  },
+  {
+    id: 196,
+    nivel: 'medio',
+    enunciado: "Qual elemento químico foi descoberto primeiro no Sol, antes de ser encontrado na Terra?",
+    opcoes: ["Hidrogênio", "Oxigênio", "Neônio", "Hélio"],
+    resposta: 3,
+    explicacao: "Foi identificado na luz do Sol durante um eclipse em 1868. O nome vem de Hélios, o Sol na mitologia grega."
+  },
+  {
+    id: 197,
+    nivel: 'medio',
+    enunciado: "Por que a luz de galáxias distantes chega até nós mais avermelhada?",
+    opcoes: ["Por causa de poeira vermelha no caminho", "Porque são galáxias frias", "Por causa da expansão do Universo (desvio para o vermelho)", "Porque giram muito rápido"],
+    resposta: 2,
+    explicacao: "Com a expansão do espaço, o comprimento de onda da luz se estica. Quanto mais distante a galáxia, maior o desvio."
+  },
+  {
+    id: 198,
+    nivel: 'medio',
+    enunciado: "Quem mostrou, em 1929, que as galáxias estão se afastando de nós?",
+    opcoes: ["Albert Einstein", "Edwin Hubble", "Carl Sagan", "Galileu Galilei"],
+    resposta: 1,
+    explicacao: "As observações de Hubble deram base à ideia de um Universo em expansão, que Georges Lemaître já havia proposto em 1927."
+  },
+  {
+    id: 199,
+    nivel: 'medio',
+    enunciado: "Em que ano a Voyager 1 entrou no espaço interestelar?",
+    opcoes: ["2012", "1990", "2000", "2020"],
+    resposta: 0,
+    explicacao: "Em agosto de 2012 ela cruzou a heliopausa, a fronteira da bolha de vento solar que envolve o Sistema Solar."
+  },
+  {
+    id: 200,
+    nivel: 'medio',
+    enunciado: "Qual sonda europeia está a caminho de Júpiter para estudar suas luas geladas?",
+    opcoes: ["Rosetta", "Gaia", "Euclid", "JUICE"],
+    resposta: 3,
+    explicacao: "Lançada em 2023, a JUICE deve chegar a Júpiter em 2031 e depois entrar em órbita de Ganimedes."
+  },
 ]
 
 export default perguntas

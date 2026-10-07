@@ -18,6 +18,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import CosmicButton from "../components/ui/CosmicButton";
 import { t, getLang, setLang, type Lang } from "../src/i18n"; // <-- caminho correto (minúsculo)
 import { StatusBar } from "expo-status-bar";
+import { getStats } from "../lib/progress";
 
 const BG = require("../assets/images/background.png");
 const LOGO = require("../assets/images/icon.png");
@@ -39,6 +40,11 @@ export default function Home() {
   );
   const [daily, setDaily] = React.useState(false);
   const FOOTER_LOGO = require("../assets/images/logo-footer.png");
+  const [streak, setStreak] = React.useState(0);
+
+  React.useEffect(() => {
+    getStats().then((st) => setStreak(st.dayStreak));
+  }, []);
 
   React.useEffect(() => {
     AsyncStorage.getItem(LANG_KEY).then((saved) => {
@@ -100,6 +106,7 @@ export default function Home() {
             </View>
             <Text style={styles.title}>{t("home.title")}</Text>
             <Text style={styles.sub}>{t("home.subtitle")}</Text>
+            {streak >= 2 && <Text style={styles.streak}>{t("home.streak", { n: streak })}</Text>}
           </View>
 
           <View style={{ marginTop: 24, marginBottom: 35 }}>
@@ -115,6 +122,13 @@ export default function Home() {
               style={{ marginBottom: 30 }}
             >
               {t("home.history")}
+            </CosmicButton>
+            <CosmicButton
+              width={240}
+              onPress={() => router.push("/medals")}
+              style={{ marginBottom: 30 }}
+            >
+              🏅 {t("home.medals")}
             </CosmicButton>
           </View>
 
@@ -311,6 +325,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   header: { alignItems: "center" },
+  streak: { marginTop: 8, color: "#FFC27A", fontWeight: "700", fontSize: 14 },
   logoCircle: {
     width: 140,
     height: 140,
@@ -438,7 +453,7 @@ const styles = StyleSheet.create({
     marginBottom: 700,
   },
   footerLogo: {
-    width: 150,
+    width: 100,
     height: 76, // proporção da logo Livi Studio (~2:1)
     opacity: 0.9,
   },

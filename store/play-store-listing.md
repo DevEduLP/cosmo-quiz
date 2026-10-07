@@ -20,7 +20,7 @@ Teste o que você sabe sobre planetas, estrelas e galáxias. Rápido e divertido
 ```
 Você é fascinado pelo Universo? O Cosmo Quiz é um quiz rápido e divertido para testar (e ampliar) o que você sabe sobre astronomia.
 
-🪐 80 PERGUNTAS SOBRE O COSMOS
+🪐 200 PERGUNTAS SOBRE O COSMOS
 Planetas, luas, estrelas, galáxias, buracos negros, cometas, eclipses e as grandes missões espaciais — da Apollo 11 ao telescópio James Webb.
 
 📚 APRENDA A CADA RESPOSTA
@@ -35,6 +35,9 @@ Todo dia, um conjunto de perguntas igual para todo mundo. Jogue e compare sua po
 
 ⚡ PARTIDAS DO SEU JEITO
 Escolha de 5 a 35 perguntas por partida: uma rodada rápida no intervalo ou uma maratona cósmica.
+
+🏅 MEDALHAS E SEQUÊNCIA DE DIAS
+Conquiste 10 medalhas, como Pouso Lunar, Supernova e Astrônomo, e mantenha sua sequência de dias jogando. 🔥
 
 📊 REVISE E ACOMPANHE
 • Revisão completa da partida, com a sua resposta, a correta e a explicação.
@@ -67,7 +70,7 @@ Test what you know about planets, stars and galaxies. Quick, fun space trivia!
 ```
 Fascinated by the Universe? Cosmo Quiz is a quick, fun quiz to test (and expand) what you know about astronomy.
 
-🪐 80 QUESTIONS ABOUT THE COSMOS
+🪐 200 QUESTIONS ABOUT THE COSMOS
 Planets, moons, stars, galaxies, black holes, comets, eclipses and the great space missions — from Apollo 11 to the James Webb telescope.
 
 📚 LEARN WITH EVERY ANSWER
@@ -82,6 +85,9 @@ Every day, the same set of questions for everyone. Play and compare your score w
 
 ⚡ PLAY YOUR WAY
 Pick 5 to 35 questions per game: a quick round on a break or a cosmic marathon.
+
+🏅 MEDALS AND DAILY STREAKS
+Earn 10 medals, like Moon Landing, Supernova and Astronomer, and keep your daily playing streak alive. 🔥
 
 📊 REVIEW AND TRACK
 • Full game review with your answer, the correct one and the explanation.
@@ -157,10 +163,10 @@ Get ready for liftoff and find out how much you really know about the Universe! 
 
 **pt-BR**
 ```
-Primeira versão do Cosmo Quiz! 80 perguntas sobre o Universo, dois níveis, desafio do dia e explicação em cada resposta. Boa viagem! 🚀
+Primeira versão do Cosmo Quiz! 200 perguntas sobre o Universo, dois níveis, desafio do dia, 10 medalhas para conquistar e explicação em cada resposta. Boa viagem! 🚀
 ```
 
 **en-US**
 ```
-First release of Cosmo Quiz! 80 questions about the Universe, two levels, a daily challenge and an explanation for every answer. Enjoy the trip! 🚀
+First release of Cosmo Quiz! 200 questions about the Universe, two levels, a daily challenge, 10 medals to earn and an explanation for every answer. Enjoy the trip! 🚀
 ```
